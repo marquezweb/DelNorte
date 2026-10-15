@@ -38,6 +38,20 @@
       photos: propertyPhotos('duplex-barrio-mutual', 16)
     },
     {
+      id: 'DdMt6xHmiKp', publishedAt: '2026-09-12', title: 'Dúplex en Pellegrini al 900',
+      operation: 'alquiler', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
+      address: 'Pellegrini al 900, Barrio Mutual', bedrooms: 2, bathrooms: 1, toilets: 1,
+      area: null, areaLabel: '', price: 1050000, currency: 'ARS', priceNote: '+ servicios e impuestos municipales',
+      availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: '',
+      summary: 'Dúplex amplio de dos dormitorios, con living-comedor con hogar y patios delantero y trasero, en Barrio Mutual.',
+      features: ['Dos dormitorios con placard', 'Baño completo y toilette', 'Cocina con barra y espacio para lavavajillas', 'Living-comedor con hogar', 'Depósito bajo escalera', 'Espacio para lavarropas', 'Cortinas y bomba de agua', 'Calefacción por caldera y radiadores', 'Patio delantero y trasero', 'Entrada para vehículo', 'A pasos del CEMEP'],
+      conditions: 'Contrato por dos años, con aumentos cada seis meses por índice IPC. Luz, gas y proporción de impuestos municipales se abonan aparte.',
+      whatsapp: '5492964617729', cardPhotoIndex: 0,
+      cardPhotoAlt: 'Frente del dúplex en alquiler en Pellegrini al 900, Barrio Mutual',
+      photos: propertyPhotos('duplex-pellegrini-900-barrio-mutual', 17)
+    },
+    {
       id: 'DeIXru5mncY', publishedAt: '2026-10-05', title: 'Dúplex sobre calle Entre Ríos',
       operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
       address: 'Entre Ríos, a pasos de la bicisenda', bedrooms: 2, bathrooms: 1, toilets: 1,

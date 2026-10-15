@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T11:56:43.238Z",
-  "totalBytes": 18395396,
+  "generatedAt": "2026-10-15T13:17:28.618Z",
+  "totalBytes": 21735466,
   "files": [
     {
       "path": ".gitignore",
@@ -375,6 +375,82 @@
       "bytes": 5532
     },
     {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-1280.webp",
+      "bytes": 187712
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-160.webp",
+      "bytes": 9182
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-640.webp",
+      "bytes": 79402
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-02-160.webp",
+      "bytes": 2660
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-03-160.webp",
+      "bytes": 3860
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-04-160.webp",
+      "bytes": 2536
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-05-160.webp",
+      "bytes": 5410
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-06-160.webp",
+      "bytes": 5054
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-07-160.webp",
+      "bytes": 3152
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-08-160.webp",
+      "bytes": 6486
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-09-160.webp",
+      "bytes": 2824
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-10-160.webp",
+      "bytes": 3474
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-11-160.webp",
+      "bytes": 6618
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-12-160.webp",
+      "bytes": 3896
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-13-160.webp",
+      "bytes": 3984
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-14-160.webp",
+      "bytes": 4240
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-15-160.webp",
+      "bytes": 3446
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-16-160.webp",
+      "bytes": 3946
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-17-160.webp",
+      "bytes": 4828
+    },
+    {
       "path": "assets/tailwind.config.js",
       "bytes": 3944
     },
@@ -392,7 +468,7 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 12664
+      "bytes": 14005
     },
     {
       "path": "desarrollos.html",
@@ -717,6 +793,74 @@
     {
       "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-16.jpg",
       "bytes": 220887
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01.jpg",
+      "bytes": 250382
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-02.jpg",
+      "bytes": 121226
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-03.jpg",
+      "bytes": 168140
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-04.jpg",
+      "bytes": 117380
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-05.jpg",
+      "bytes": 228647
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-06.jpg",
+      "bytes": 213151
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-07.jpg",
+      "bytes": 131600
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-08.jpg",
+      "bytes": 263041
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-09.jpg",
+      "bytes": 118596
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-10.jpg",
+      "bytes": 108276
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-11.jpg",
+      "bytes": 222002
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-12.jpg",
+      "bytes": 175046
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-13.jpg",
+      "bytes": 178937
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-14.jpg",
+      "bytes": 169379
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-15.jpg",
+      "bytes": 169328
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-16.jpg",
+      "bytes": 155933
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-17.jpg",
+      "bytes": 204955
     },
     {
       "path": "index.html",
