@@ -1,0 +1,750 @@
+{
+  "generatedAt": "2026-10-15T11:56:43.238Z",
+  "totalBytes": 18395396,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 52
+    },
+    {
+      "path": "README.md",
+      "bytes": 1202
+    },
+    {
+      "path": "app.js",
+      "bytes": 11395
+    },
+    {
+      "path": "assets/logo.jpg",
+      "bytes": 3601
+    },
+    {
+      "path": "assets/oficina-1440.webp",
+      "bytes": 314424
+    },
+    {
+      "path": "assets/oficina-768.webp",
+      "bytes": 92750
+    },
+    {
+      "path": "assets/oficina-cartel-1440.webp",
+      "bytes": 231090
+    },
+    {
+      "path": "assets/oficina-cartel-768.webp",
+      "bytes": 71198
+    },
+    {
+      "path": "assets/oficina-frente-1440.webp",
+      "bytes": 209228
+    },
+    {
+      "path": "assets/oficina-frente-768.webp",
+      "bytes": 64496
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-01-1280.webp",
+      "bytes": 286700
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-01-160.webp",
+      "bytes": 7242
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-01-640.webp",
+      "bytes": 88920
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-02-160.webp",
+      "bytes": 4050
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-03-160.webp",
+      "bytes": 5698
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-04-160.webp",
+      "bytes": 4166
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-05-160.webp",
+      "bytes": 4468
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-06-160.webp",
+      "bytes": 3784
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-07-160.webp",
+      "bytes": 5004
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-08-160.webp",
+      "bytes": 5210
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-09-160.webp",
+      "bytes": 4484
+    },
+    {
+      "path": "assets/properties/casa-barrio-aeropuerto/casa-barrio-aeropuerto-10-160.webp",
+      "bytes": 5550
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-1280.webp",
+      "bytes": 214890
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-160.webp",
+      "bytes": 9036
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-640.webp",
+      "bytes": 84038
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-02-160.webp",
+      "bytes": 2598
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-03-160.webp",
+      "bytes": 2852
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-04-160.webp",
+      "bytes": 2964
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-05-160.webp",
+      "bytes": 5788
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-06-160.webp",
+      "bytes": 4832
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-07-160.webp",
+      "bytes": 6308
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-08-160.webp",
+      "bytes": 3392
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-09-160.webp",
+      "bytes": 3440
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-10-160.webp",
+      "bytes": 7584
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-11-160.webp",
+      "bytes": 3578
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-12-160.webp",
+      "bytes": 3036
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-13-160.webp",
+      "bytes": 4564
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-14-160.webp",
+      "bytes": 3240
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-15-160.webp",
+      "bytes": 3038
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-16-160.webp",
+      "bytes": 10290
+    },
+    {
+      "path": "assets/properties/cochera-edificio-turek/cochera-edificio-turek-01-limpia-1280.webp",
+      "bytes": 186554
+    },
+    {
+      "path": "assets/properties/cochera-edificio-turek/cochera-edificio-turek-01-limpia-160.webp",
+      "bytes": 6040
+    },
+    {
+      "path": "assets/properties/cochera-edificio-turek/cochera-edificio-turek-01-limpia-640.webp",
+      "bytes": 65012
+    },
+    {
+      "path": "assets/properties/cochera-edificio-turek/cochera-edificio-turek-02-160.webp",
+      "bytes": 4380
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-1280.webp",
+      "bytes": 199384
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-160.webp",
+      "bytes": 9772
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-640.webp",
+      "bytes": 82748
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-02-160.webp",
+      "bytes": 4884
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-03-160.webp",
+      "bytes": 6266
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-04-160.webp",
+      "bytes": 2504
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-05-160.webp",
+      "bytes": 3836
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-06-160.webp",
+      "bytes": 3846
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-07-160.webp",
+      "bytes": 6284
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-08-160.webp",
+      "bytes": 7390
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-01-limpia-1280.webp",
+      "bytes": 192334
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-01-limpia-160.webp",
+      "bytes": 5106
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-01-limpia-640.webp",
+      "bytes": 57280
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-02-160.webp",
+      "bytes": 2974
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-03-160.webp",
+      "bytes": 4136
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-04-160.webp",
+      "bytes": 3706
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-05-160.webp",
+      "bytes": 2222
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-06-160.webp",
+      "bytes": 1974
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-07-160.webp",
+      "bytes": 2330
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-08-160.webp",
+      "bytes": 1326
+    },
+    {
+      "path": "assets/properties/departamento-finochietto-1500/departamento-finochietto-1500-09-160.webp",
+      "bytes": 4798
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-1280.webp",
+      "bytes": 263596
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-160.webp",
+      "bytes": 8996
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-640.webp",
+      "bytes": 103286
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-02-160.webp",
+      "bytes": 3958
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-03-160.webp",
+      "bytes": 3496
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-04-160.webp",
+      "bytes": 4808
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-05-160.webp",
+      "bytes": 2860
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-06-160.webp",
+      "bytes": 3492
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-07-160.webp",
+      "bytes": 5050
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-08-160.webp",
+      "bytes": 4208
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-1280.webp",
+      "bytes": 180722
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-160.webp",
+      "bytes": 11122
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-640.webp",
+      "bytes": 81416
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-02-160.webp",
+      "bytes": 4064
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-03-160.webp",
+      "bytes": 4466
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-04-160.webp",
+      "bytes": 6062
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-05-160.webp",
+      "bytes": 7116
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-06-160.webp",
+      "bytes": 6252
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-07-160.webp",
+      "bytes": 5020
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-08-160.webp",
+      "bytes": 5786
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-09-160.webp",
+      "bytes": 4896
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-10-160.webp",
+      "bytes": 5054
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-11-160.webp",
+      "bytes": 4842
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-12-160.webp",
+      "bytes": 6688
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-13-160.webp",
+      "bytes": 6314
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-14-160.webp",
+      "bytes": 4050
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-15-160.webp",
+      "bytes": 4358
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-16-160.webp",
+      "bytes": 5532
+    },
+    {
+      "path": "assets/tailwind.config.js",
+      "bytes": 3944
+    },
+    {
+      "path": "catalogo.html",
+      "bytes": 15581
+    },
+    {
+      "path": "data/developments.js",
+      "bytes": 3435
+    },
+    {
+      "path": "data/featured.js",
+      "bytes": 163
+    },
+    {
+      "path": "data/properties.js",
+      "bytes": 12664
+    },
+    {
+      "path": "desarrollos.html",
+      "bytes": 6174
+    },
+    {
+      "path": "developments.js",
+      "bytes": 11161
+    },
+    {
+      "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-01.jpg",
+      "bytes": 250337
+    },
+    {
+      "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-02.jpg",
+      "bytes": 220814
+    },
+    {
+      "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-03.jpg",
+      "bytes": 309207
+    },
+    {
+      "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-04.jpg",
+      "bytes": 274990
+    },
+    {
+      "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-05.jpg",
+      "bytes": 240617
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01.jpg",
+      "bytes": 244026
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-02.jpg",
+      "bytes": 293246
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-03.jpg",
+      "bytes": 311086
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-04.jpg",
+      "bytes": 225556
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-05.jpg",
+      "bytes": 317531
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-01.jpg",
+      "bytes": 350989
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-02.jpg",
+      "bytes": 147668
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-03.jpg",
+      "bytes": 178952
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-04.jpg",
+      "bytes": 135760
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-05.jpg",
+      "bytes": 141823
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-06.jpg",
+      "bytes": 126212
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-07.jpg",
+      "bytes": 153123
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-08.jpg",
+      "bytes": 154741
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-09.jpg",
+      "bytes": 158407
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-aeropuerto/casa-barrio-aeropuerto-10.jpg",
+      "bytes": 254609
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01.jpg",
+      "bytes": 266555
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-02.jpg",
+      "bytes": 89993
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-03.jpg",
+      "bytes": 98513
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-04.jpg",
+      "bytes": 88419
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-05.jpg",
+      "bytes": 184097
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-06.jpg",
+      "bytes": 149203
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-07.jpg",
+      "bytes": 192040
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-08.jpg",
+      "bytes": 101747
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-09.jpg",
+      "bytes": 90084
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-10.jpg",
+      "bytes": 207829
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-11.jpg",
+      "bytes": 101032
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-12.jpg",
+      "bytes": 98598
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-13.jpg",
+      "bytes": 128712
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-14.jpg",
+      "bytes": 111661
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-15.jpg",
+      "bytes": 80767
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-16.jpg",
+      "bytes": 291859
+    },
+    {
+      "path": "imagenes/propiedades/cochera-edificio-turek/cochera-edificio-turek-01-limpia.jpg",
+      "bytes": 417021
+    },
+    {
+      "path": "imagenes/propiedades/cochera-edificio-turek/cochera-edificio-turek-02.jpg",
+      "bytes": 96647
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01.jpg",
+      "bytes": 263250
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-02.jpg",
+      "bytes": 193723
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-03.jpg",
+      "bytes": 261059
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-04.jpg",
+      "bytes": 106867
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-05.jpg",
+      "bytes": 162255
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-06.jpg",
+      "bytes": 175190
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-07.jpg",
+      "bytes": 233654
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-08.jpg",
+      "bytes": 296391
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-01-limpia.jpg",
+      "bytes": 455308
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-02.jpg",
+      "bytes": 80198
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-03.jpg",
+      "bytes": 93795
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-04.jpg",
+      "bytes": 86380
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-05.jpg",
+      "bytes": 67465
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-06.jpg",
+      "bytes": 52482
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-07.jpg",
+      "bytes": 61629
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-08.jpg",
+      "bytes": 31698
+    },
+    {
+      "path": "imagenes/propiedades/departamento-finochietto-1500/departamento-finochietto-1500-09.jpg",
+      "bytes": 99161
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01.jpg",
+      "bytes": 301633
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-02.jpg",
+      "bytes": 113261
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-03.jpg",
+      "bytes": 103337
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-04.jpg",
+      "bytes": 120770
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-05.jpg",
+      "bytes": 75061
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-06.jpg",
+      "bytes": 111621
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-07.jpg",
+      "bytes": 163037
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-08.jpg",
+      "bytes": 136340
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-01.jpg",
+      "bytes": 268478
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-02.jpg",
+      "bytes": 138158
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-03.jpg",
+      "bytes": 130323
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-04.jpg",
+      "bytes": 271080
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-05.jpg",
+      "bytes": 321164
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-06.jpg",
+      "bytes": 332176
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-07.jpg",
+      "bytes": 205237
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-08.jpg",
+      "bytes": 222941
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-09.jpg",
+      "bytes": 208252
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-10.jpg",
+      "bytes": 211871
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-11.jpg",
+      "bytes": 196515
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-12.jpg",
+      "bytes": 301091
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-13.jpg",
+      "bytes": 262970
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-14.jpg",
+      "bytes": 179132
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-15.jpg",
+      "bytes": 201046
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-16.jpg",
+      "bytes": 220887
+    },
+    {
+      "path": "index.html",
+      "bytes": 18705
+    },
+    {
+      "path": "package.json",
+      "bytes": 235
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 731
+    },
+    {
+      "path": "scripts/server.mjs",
+      "bytes": 1727
+    },
+    {
+      "path": "servicios.html",
+      "bytes": 8404
+    },
+    {
+      "path": "site.js",
+      "bytes": 10160
+    },
+    {
+      "path": "styles.css",
+      "bytes": 76179
+    }
+  ]
+}
