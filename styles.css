@@ -1119,6 +1119,24 @@ body.dialog-open { overflow:hidden; }
   box-shadow:0 10px 22px rgb(145 14 23 / 24%);
   transform:translateY(-2px);
 }
+@media (hover:none), (pointer:coarse) {
+  #inicio .hero-action-buttons > .button-primary,
+  #inicio .hero-action-buttons > .button-primary:hover {
+    background:var(--accent);
+    border-color:var(--accent);
+    box-shadow:none;
+    transform:none;
+  }
+  #inicio .hero-action-buttons > .button-outline,
+  #inicio .hero-action-buttons > .button-outline:hover {
+    background:transparent;
+    border-color:rgb(36 33 30 / 30%);
+    box-shadow:none;
+    transform:none;
+  }
+  #inicio .hero-action-buttons > a::after { content:none; }
+  #inicio .hero-action-buttons > a:active { transform:scale(.98); }
+}
 #seleccion.selection-section { padding-bottom:56px; }
 #seleccion .property-body { padding:18px 20px 20px; }
 #seleccion .property-title { margin-top:12px; }
