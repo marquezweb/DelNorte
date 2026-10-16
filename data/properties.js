@@ -9,6 +9,21 @@
 
   const properties = [
     {
+      id: 'DefbmXRGpWq', publishedAt: '2026-10-14', title: 'Dúplex en Ushuaia al 700',
+      operation: 'alquiler', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
+      address: 'Ushuaia al 700, Barrio Mutual', bedrooms: 2, bathrooms: 1, toilets: 1,
+      area: null, areaLabel: '', price: 930000, currency: 'ARS',
+      rentalFormat: true, availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: '',
+      summary: 'Dúplex de dos dormitorios en Barrio Mutual, con cocina amplia separada, patio trasero y entrada para auto.',
+      features: ['Dos dormitorios con placard', 'Un baño completo y un toilette', 'Cocina amplia separada', 'Living-comedor', 'Doble hall de entrada', 'Patio trasero', 'Entrada para auto', 'Tanque de agua y bomba', 'Calefacción por caldera y radiadores'],
+      contractConditions: ['Duración: 2 años.', 'Ajustes: cada 6 meses mediante el índice IPC.', 'Los servicios se abonan por separado del alquiler.'],
+      extraCosts: ['Luz', 'Gas', 'Proporción de impuestos municipales'],
+      whatsapp: '5492964617729', cardPhotoIndex: 0,
+      cardPhotoAlt: 'Frente del dúplex en alquiler en Ushuaia al 700, Barrio Mutual',
+      photos: propertyPhotos('duplex-ushuaia-700-barrio-mutual', 14, { cleanFirst: true })
+    },
+    {
       id: 'DYAMViQgJsY', publishedAt: '2026-05-06', title: 'Casa en Barrio Aeropuerto',
       operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'Barrio Aeropuerto',
       address: 'Barrio Aeropuerto, Río Grande', bedrooms: 3, bathrooms: 2,
@@ -35,7 +50,7 @@
       conditions: 'Precio más gastos de comisión inmobiliaria y escritura.',
       whatsapp: '5492964610103', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del dúplex en Barrio Mutual',
-      photos: propertyPhotos('duplex-barrio-mutual', 16)
+      photos: propertyPhotos('duplex-barrio-mutual', 16, { cleanFirst: true })
     },
     {
       id: 'DdMt6xHmiKp', publishedAt: '2026-09-12', title: 'Dúplex en Pellegrini al 900',
@@ -51,7 +66,7 @@
       extraCosts: ['Proporción de impuestos municipales', 'Luz', 'Gas'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del dúplex en alquiler en Pellegrini al 900, Barrio Mutual',
-      photos: propertyPhotos('duplex-pellegrini-900-barrio-mutual', 17)
+      photos: propertyPhotos('duplex-pellegrini-900-barrio-mutual', 17, { cleanFirst: true })
     },
     {
       id: 'DeIXru5mncY', publishedAt: '2026-10-05', title: 'Dúplex sobre calle Entre Ríos',
@@ -78,7 +93,7 @@
       conditions: 'Alquilada y genera renta. Precio: USD 170.000.',
       whatsapp: '5492964610103', cardPhotoIndex: 0,
       cardPhotoAlt: 'Fachada de la casa en venta en Barrio Las Barrancas',
-      photos: propertyPhotos('casa-barrio-las-barrancas', 16)
+      photos: propertyPhotos('casa-barrio-las-barrancas', 16, { cleanFirst: true })
     },
     {
       id: 'Dd9xBY2GjP0', publishedAt: '2026-10-01', title: 'Cochera en Edificio Turek',
@@ -148,7 +163,7 @@
       extraCosts: ['Expensas', 'Luz', 'Gas', 'Seguro contra incendio'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del edificio en Belgrano y San Martín',
-      photos: propertyPhotos('departamento-belgrano-san-martin', 8)
+      photos: propertyPhotos('departamento-belgrano-san-martin', 8, { cleanFirst: true })
     },
     {
       id: 'DczHePGmjeT', publishedAt: '2026-09-02', title: 'Departamentos en Barrio Buenavista',
@@ -166,7 +181,7 @@
       costNotes: ['Sin expensas.'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del edificio de departamentos en Gálvez al 500, Barrio Buenavista',
-      photos: propertyPhotos('departamentos-barrio-buenavista', 8)
+      photos: propertyPhotos('departamentos-barrio-buenavista', 8, { cleanFirst: true })
     }
   ].map(property => ({ ...property, source: sourceFor(property.id) }));
 

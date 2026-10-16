@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T15:24:34.358Z",
-  "totalBytes": 22084147,
+  "generatedAt": "2026-10-16T17:48:39.028Z",
+  "totalBytes": 43623424,
   "files": [
     {
       "path": ".gitignore",
@@ -460,11 +460,11 @@
     },
     {
       "path": "catalogo.html",
-      "bytes": 19043
+      "bytes": 19255
     },
     {
       "path": "data/developments.js",
-      "bytes": 3432
+      "bytes": 4934
     },
     {
       "path": "data/featured.js",
@@ -472,15 +472,15 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 15028
+      "bytes": 16431
     },
     {
       "path": "desarrollos.html",
-      "bytes": 7124
+      "bytes": 7336
     },
     {
       "path": "developments.js",
-      "bytes": 11571
+      "bytes": 13162
     },
     {
       "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-01.jpg",
@@ -868,7 +868,7 @@
     },
     {
       "path": "index.html",
-      "bytes": 22630
+      "bytes": 22842
     },
     {
       "path": "package.json",
@@ -880,19 +880,267 @@
     },
     {
       "path": "scripts/server.mjs",
-      "bytes": 1727
+      "bytes": 1748
     },
     {
       "path": "servicios.html",
-      "bytes": 9193
+      "bytes": 9405
     },
     {
       "path": "site.js",
-      "bytes": 10305
+      "bytes": 10302
     },
     {
       "path": "styles.css",
-      "bytes": 89945
+      "bytes": 91479
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01.jpg",
+      "bytes": 283263
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-02.jpg",
+      "bytes": 283761
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-03.jpg",
+      "bytes": 474373
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-01.mp4",
+      "bytes": 1956232
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-02.mp4",
+      "bytes": 7004647
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-03.mp4",
+      "bytes": 2215883
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01.jpg",
+      "bytes": 223650
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-02.jpg",
+      "bytes": 195753
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-03.jpg",
+      "bytes": 207378
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-04.jpg",
+      "bytes": 192657
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-05.jpg",
+      "bytes": 230148
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-06.jpg",
+      "bytes": 173887
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-07.jpg",
+      "bytes": 163112
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-08.jpg",
+      "bytes": 169706
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-09.jpg",
+      "bytes": 143621
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-10.jpg",
+      "bytes": 140633
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-11.jpg",
+      "bytes": 215043
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-12.jpg",
+      "bytes": 137682
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-13.jpg",
+      "bytes": 212245
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-14.jpg",
+      "bytes": 192046
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-1280.webp",
+      "bytes": 155786
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-160.webp",
+      "bytes": 8850
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-640.webp",
+      "bytes": 64346
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-02-160.webp",
+      "bytes": 6642
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-03-160.webp",
+      "bytes": 5402
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-04-160.webp",
+      "bytes": 5092
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-05-160.webp",
+      "bytes": 7058
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-06-160.webp",
+      "bytes": 5058
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-07-160.webp",
+      "bytes": 4666
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-08-160.webp",
+      "bytes": 4656
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-09-160.webp",
+      "bytes": 3842
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-10-160.webp",
+      "bytes": 4106
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-11-160.webp",
+      "bytes": 4526
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-12-160.webp",
+      "bytes": 3614
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-13-160.webp",
+      "bytes": 4382
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-14-160.webp",
+      "bytes": 5994
+    },
+    {
+      "path": "imagenes/propiedades/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-limpia.jpg",
+      "bytes": 443925
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-limpia-1280.webp",
+      "bytes": 198912
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-limpia-160.webp",
+      "bytes": 8616
+    },
+    {
+      "path": "assets/properties/duplex-ushuaia-700-barrio-mutual/duplex-ushuaia-700-barrio-mutual-01-limpia-640.webp",
+      "bytes": 75882
+    },
+    {
+      "path": "imagenes/propiedades/duplex-barrio-mutual/duplex-barrio-mutual-01-limpia.jpg",
+      "bytes": 535310
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-limpia-160.webp",
+      "bytes": 11216
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-limpia-640.webp",
+      "bytes": 93644
+    },
+    {
+      "path": "assets/properties/duplex-barrio-mutual/duplex-barrio-mutual-01-limpia-1280.webp",
+      "bytes": 235908
+    },
+    {
+      "path": "imagenes/propiedades/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-limpia.jpg",
+      "bytes": 532489
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-limpia-160.webp",
+      "bytes": 9038
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-limpia-640.webp",
+      "bytes": 98614
+    },
+    {
+      "path": "assets/properties/duplex-pellegrini-900-barrio-mutual/duplex-pellegrini-900-barrio-mutual-01-limpia-1280.webp",
+      "bytes": 259554
+    },
+    {
+      "path": "imagenes/propiedades/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-limpia.jpg",
+      "bytes": 559789
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-limpia-160.webp",
+      "bytes": 8680
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-limpia-640.webp",
+      "bytes": 102032
+    },
+    {
+      "path": "assets/properties/casa-barrio-las-barrancas/casa-barrio-las-barrancas-01-limpia-1280.webp",
+      "bytes": 292120
+    },
+    {
+      "path": "imagenes/propiedades/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-limpia.jpg",
+      "bytes": 494004
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-limpia-160.webp",
+      "bytes": 9796
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-limpia-640.webp",
+      "bytes": 98258
+    },
+    {
+      "path": "assets/properties/departamento-belgrano-san-martin/departamento-belgrano-san-martin-01-limpia-1280.webp",
+      "bytes": 235044
+    },
+    {
+      "path": "imagenes/propiedades/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-limpia.jpg",
+      "bytes": 581422
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-limpia-160.webp",
+      "bytes": 9346
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-limpia-640.webp",
+      "bytes": 128480
+    },
+    {
+      "path": "assets/properties/departamentos-barrio-buenavista/departamentos-barrio-buenavista-01-limpia-1280.webp",
+      "bytes": 335152
+    },
+    {
+      "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01-limpia.jpg",
+      "bytes": 587117
+    },
+    {
+      "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01-limpia.jpg",
+      "bytes": 478293
     }
   ]
 }

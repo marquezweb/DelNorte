@@ -26,7 +26,7 @@
           : 'Hola, vi las propiedades en venta en la web de Del Norte Propiedades. Quisiera recibir más información y asesoramiento para comprar.';
       } else if (location.pathname.endsWith('desarrollos.html')) {
         const category = params.get('categoria') === 'pozo' ? 'pozo' : 'terrenos';
-        number = category === 'terrenos' ? numbers.terrenos : numbers.comprar;
+        number = category === 'terrenos' ? numbers.terrenos : numbers.otro;
         const projects = (globalThis.DelNorteDevelopments || []).filter(project => project.category === category);
         const project = projects.find(item => item.id === params.get('id')) || (projects.length === 1 ? projects[0] : null);
         message = project

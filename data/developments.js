@@ -1,8 +1,25 @@
 globalThis.DelNorteDevelopments = [
   {
     id: 'altos-de-la-estancia', category: 'terrenos', name: 'Altos de la Estancia',
-    city: null, description: 'Conocé Altos de la Estancia y consultanos por más información.',
-    facts: [], source: null, verification: 'Características y condiciones del desarrollo a confirmar.'
+    city: 'Río Grande', address: 'Barrio Altos de la Estancia',
+    description: 'Terrenos para viviendas unifamiliares en un barrio totalmente pavimentado, con servicios soterrados y lotes listos para construir.',
+    facts: ['Lotes desde 240 m² hasta 729 m²', 'Servicios soterrados', 'Barrio totalmente pavimentado', 'Exclusivo para viviendas unifamiliares', 'Listos para construir', 'Algunos macizos con escritura'],
+    priceFrom: 27816, currency: 'USD',
+    cashNote: 'Bonificación del 5% por pago contado.',
+    financing: ['Entrega inicial del 50%', 'Saldo en hasta 24 cuotas fijas en dólares'],
+    image: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01-limpia.jpg',
+    imageAlt: 'Vista aérea de Altos de la Estancia en Río Grande',
+    photos: [
+      { label: 'Vista aérea del barrio', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01-limpia.jpg' },
+      { label: 'Vista aérea · Macizos 117, 118 y 119', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-02.jpg' },
+      { label: 'Plano de ubicación de los macizos', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-03.jpg' }
+    ],
+    videos: [
+      { label: 'Recorrido del barrio · Video 1', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-01.mp4' },
+      { label: 'Recorrido del barrio · Video 2', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-02.mp4' },
+      { label: 'Recorrido del barrio · Video 3', src: 'imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-video-03.mp4' }
+    ],
+    source: 'https://www.instagram.com/p/DaD_nI_Ghwa/', verification: null
   },
   {
     id: 'las-barrancas-ii', category: 'terrenos', name: 'Las Barrancas II',
@@ -11,10 +28,10 @@ globalThis.DelNorteDevelopments = [
     facts: ['Lotes residenciales y unifamiliares desde 242 m²', 'Dos lotes con orientación hacia el mar', 'Agua y cloaca', 'Luz y gas'],
     priceFrom: 23750, currency: 'USD', financedFrom: 25000,
     financing: ['Entrega inicial del 25%: USD 6.250', 'Saldo en 18 cuotas fijas en dólares'],
-    image: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01.jpg',
+    image: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01-limpia.jpg',
     imageAlt: 'Vista aérea de los lotes de Las Barrancas II con orientación hacia el mar',
     photos: [
-      { label: 'Vista aérea · Lote con orientación al mar', src: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01.jpg' },
+      { label: 'Vista aérea · Lote con orientación al mar', src: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01-limpia.jpg' },
       { label: 'Vista aérea · Lotes y costa', src: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-02.jpg' },
       { label: 'Vista del barrio y la costa', src: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-03.jpg' },
       { label: 'Vista hacia el mar', src: 'imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-04.jpg' },
