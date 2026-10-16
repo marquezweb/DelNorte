@@ -114,9 +114,9 @@
       photos: propertyPhotos('cochera-edificio-turek', 2, { cleanFirst: true })
     },
     {
-      id: 'Dd9vtifGp4z', publishedAt: '2026-10-01', title: 'Departamento en Finochietto al 1500',
+      id: 'Dd9vtifGp4z', publishedAt: '2026-10-01', title: 'Departamento en Finocchio al 1500',
       operation: 'alquiler', type: 'departamentos', city: 'rio-grande', neighborhood: 'Zona Centro',
-      address: 'Finochietto al 1500', bedrooms: 2, bathrooms: 1,
+      address: 'Finocchio al 1500', bedrooms: 2, bathrooms: 1,
       area: null, areaLabel: '', price: 530000, currency: 'ARS', priceNote: '+ impuestos',
       availabilityStatus: 'confirmed', publicListing: true,
       occupancy: '',
@@ -127,7 +127,7 @@
       contractConditions: ['Duración: 2 años.', 'Ajustes: cada 6 meses mediante el índice IPC.'],
       extraCosts: ['Impuestos'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
-      cardPhotoAlt: 'Frente del edificio en Finochietto al 1500, Zona Centro',
+      cardPhotoAlt: 'Frente del edificio en Finocchio al 1500, Zona Centro',
       photos: propertyPhotos('departamento-finochietto-1500', 9, { cleanFirst: true })
     },
     {

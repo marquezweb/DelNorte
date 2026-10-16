@@ -36,6 +36,23 @@ h1,h2,h3,p,figure { margin:0; }
 .main-navigation a:hover { color:var(--ink); }
 .main-navigation a:hover::after, .main-navigation a:focus-visible::after { transform:scaleX(1); }
 .menu-toggle { display:none; }
+.header-contact { display:inline-flex; align-items:center; justify-content:center; gap:12px; flex:none; min-height:44px; padding:10px 16px; color:var(--ink); background:var(--white); border:1px solid var(--line); border-radius:var(--radius-control); font-size:14px; font-weight:500; }
+.header-contact:hover { border-color:var(--ink); }
+@media (min-width:1024px) {
+  .header-menu-group { position:absolute; top:50%; left:calc(44vw - max(64px, calc(50vw - 640px))); display:flex; align-items:center; gap:16px; transform:translateY(-50%); }
+  .site-header .main-navigation { position:static; top:auto; left:auto; transform:none; margin-left:0; gap:20px; white-space:nowrap; }
+}
+@media (min-width:1200px) and (max-width:1399px) {
+  .site-header .main-navigation { gap:12px; }
+  .site-header .main-navigation > a, .site-header .nav-dropdown > summary { font-size:18px; }
+}
+@media (min-width:1024px) and (max-width:1199px) {
+  .header-menu-group { gap:10px; }
+  .site-header .main-navigation { gap:6px; }
+  .site-header .main-navigation > a, .site-header .nav-dropdown > summary { font-size:16px; }
+  .header-contact { padding-inline:10px; font-size:12px; gap:8px; }
+}
+@media (max-width:1023px) { .header-contact { display:none; } .header-menu-group { display:contents; } }
 /* La portada compone texto, imagen y ficha de una propiedad real como una sola escena. */
 .hero-section { padding:0; background:var(--stone); }
 .hero-layout { width:100%; max-width:none; display:grid; grid-template-columns:minmax(0,44%) minmax(0,56%); gap:0; align-items:stretch; min-height:clamp(600px,42vw,740px); border:0; padding:0; }
@@ -182,6 +199,13 @@ h1,h2,h3,p,figure { margin:0; }
 .contact-email { width:100%; min-height:72px; margin-top:0; overflow-wrap:anywhere; font-size:13px; }
 .contact-email-address { min-width:0; overflow-wrap:anywhere; }
 .contact-email .contact-channel-label { color:#65543d; background:#f1e9dd; }
+@media (max-width:639px) {
+  .contact-emails .contact-email { grid-template-columns:28px minmax(0,1fr) 16px; gap:8px; padding:12px; }
+  .contact-email .contact-channel-icon { grid-column:1; grid-row:1; width:28px; height:28px; font-size:17px; }
+  .contact-email .contact-channel-label { grid-column:2; grid-row:1; justify-self:start; }
+  .contact-email .contact-channel-arrow { grid-column:3; grid-row:1; }
+  .contact-email .contact-email-address { grid-column:1 / -1; grid-row:2; font-size:clamp(10.5px,3vw,13px); white-space:nowrap; overflow-wrap:normal; }
+}
 .contact-map { position:relative; margin-top:32px; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius-control); overflow:hidden; }
 .contact-map iframe { display:block; width:100%; height:100%; border:0; }
 .contact-map-header { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:26px 30px; }
@@ -600,6 +624,8 @@ body.dialog-open { overflow:hidden; }
 .site-header.is-scrolled .brand-logo { filter:drop-shadow(0 2px 3px rgb(48 46 42 / 13%)); transform:translateY(-1px); }
 .site-header.is-scrolled .main-navigation a { color:var(--ink); }
 .site-footer .brand-logo { width:104px; height:104px; mix-blend-mode:normal; border-radius:var(--radius-control); box-shadow:0 0 0 1px rgba(255,255,255,.1); }
+.site-footer .footer-logo { display:block; width:144px; height:auto; }
+@media (max-width:639px) { .site-footer .footer-logo { width:120px; } }
 .brand-lockup { display:flex; align-items:center; gap:10px; flex:none; width:196px; height:68px; }
 .site-footer .brand-lockup { --footer-logo-scale:1; box-sizing:content-box; width:calc(212px * var(--footer-logo-scale)); height:calc(76px * var(--footer-logo-scale)); gap:calc(10px * var(--footer-logo-scale)); padding:8px 10px; background:var(--paper); border-radius:var(--radius-control); }
 .site-footer .brand-logo-mark { width:calc(70px * var(--footer-logo-scale)); height:calc(76px * var(--footer-logo-scale)); }

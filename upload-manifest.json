@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T18:31:30.778Z",
-  "totalBytes": 43624723,
+  "generatedAt": "2026-10-16T19:28:40.266Z",
+  "totalBytes": 43630817,
   "files": [
     {
       "path": ".gitignore",
@@ -460,7 +460,7 @@
     },
     {
       "path": "catalogo.html",
-      "bytes": 19255
+      "bytes": 20289
     },
     {
       "path": "data/developments.js",
@@ -472,11 +472,11 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 16431
+      "bytes": 16425
     },
     {
       "path": "desarrollos.html",
-      "bytes": 7144
+      "bytes": 8174
     },
     {
       "path": "developments.js",
@@ -868,7 +868,7 @@
     },
     {
       "path": "index.html",
-      "bytes": 22764
+      "bytes": 23798
     },
     {
       "path": "package.json",
@@ -884,7 +884,7 @@
     },
     {
       "path": "servicios.html",
-      "bytes": 9406
+      "bytes": 10436
     },
     {
       "path": "site.js",
@@ -892,7 +892,7 @@
     },
     {
       "path": "styles.css",
-      "bytes": 93415
+      "bytes": 95387
     },
     {
       "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01.jpg",
