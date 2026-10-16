@@ -1,5 +1,5 @@
 (() => {
-  const numbers = { alquilar: '5492964617729', comprar: '5492964610103', tasar: '5492964610103', administrar: '5492964478802', renovar: '5492964478765', otro: '5492964610103' };
+  const numbers = { alquilar: '5492964617729', comprar: '5492964610103', tasar: '5492964610103', administrar: '5492964478802', renovar: '5492964478765', terrenos: '5492964478765', otro: '5492964617729' };
   const prepareWhatsAppURL = ({ name, phone, interest, interestText, fields = [], message, number }) => {
     const clean = value => String(value || '').trim();
     const parts = [`Hola, soy ${clean(name)}.`, `Teléfono de contacto: ${clean(phone)}.`];
@@ -26,6 +26,7 @@
           : 'Hola, vi las propiedades en venta en la web de Del Norte Propiedades. Quisiera recibir más información y asesoramiento para comprar.';
       } else if (location.pathname.endsWith('desarrollos.html')) {
         const category = params.get('categoria') === 'pozo' ? 'pozo' : 'terrenos';
+        number = category === 'terrenos' ? numbers.terrenos : numbers.comprar;
         const projects = (globalThis.DelNorteDevelopments || []).filter(project => project.category === category);
         const project = projects.find(item => item.id === params.get('id')) || (projects.length === 1 ? projects[0] : null);
         message = project
@@ -48,7 +49,7 @@
     floatingContact.addEventListener('click', syncFloatingContact);
     window.addEventListener('hashchange', syncFloatingContact);
     document.addEventListener('click', event => {
-      if (event.target.closest('button[data-operation]')) syncFloatingContact();
+      if (event.target.closest('button[data-operation]')) window.setTimeout(syncFloatingContact, 0);
     });
   }
 
@@ -99,7 +100,7 @@
       {
         src: 'assets/oficina-1440.webp',
         srcset: 'assets/oficina-768.webp 768w, assets/oficina-1440.webp 1440w',
-        alt: 'Frente de la oficina de Del Norte Propiedades y su cartel en Ushuaia 536, Río Grande',
+        alt: 'Frente de la oficina de Del Norte Propiedades y su cartel en Ushuaia N° 536, Barrio Mutual, Río Grande',
         objectPosition: '100% 60%'
       },
       {

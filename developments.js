@@ -12,7 +12,10 @@
     ? 'Explorá nuestros proyectos de terrenos y loteos. Consultá sus características con el equipo.'
     : 'Conocé nuestros proyectos de edificios en pozo y consultá sus características con el equipo.';
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const contactUrl = name => `https://wa.me/5492964610103?text=${encodeURIComponent(`Hola, quisiera recibir información sobre ${name}.`)}`;
+  const contactUrl = (name, projectCategory = 'terrenos') => {
+    const number = projectCategory === 'terrenos' ? '5492964478765' : '5492964610103';
+    return `https://wa.me/${number}?text=${encodeURIComponent(`Hola, quisiera recibir información sobre ${name}.`)}`;
+  };
   const price = item => `USD ${new Intl.NumberFormat('es-AR').format(item.priceFrom)}`;
   const image = item => `<figure class="development-image"><img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.imageAlt)}" width="1440" height="1921" decoding="async"><figcaption>Render del proyecto</figcaption></figure>`;
   const heading = root.querySelector('[data-development-heading]');
@@ -22,13 +25,20 @@
     const priceLabel = `<p class="development-card-price">Contado desde ${escapeHTML(price(item))}</p><p>Financiado desde USD ${new Intl.NumberFormat('es-AR').format(item.financedFrom)} · hasta el 75%</p>`;
     const facts = `<ul class="development-facts">${item.facts.map(fact => `<li>${escapeHTML(fact)}</li>`).join('')}</ul>`;
     const financing = `<div class="development-financing"><h2>Financiación</h2><ul>${item.financing.map(term => `<li>${escapeHTML(term)}</li>`).join('')}</ul></div>`;
-    return `<article class="${articleClass} development-card-with-image development-detail-with-image">${gallery(item)}<div class="development-card-copy development-detail-copy"><span class="development-index">TERRENOS · EN VENTA</span><h2>${escapeHTML(item.name)}</h2><p>${escapeHTML(item.address)} · ${escapeHTML(item.city)}</p>${priceLabel}${facts}${financing}<a class="button-primary" href="${contactUrl(item.name)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div></article>`;
+    return `<article class="${articleClass} development-card-with-image development-detail-with-image">${gallery(item)}<div class="development-card-copy development-detail-copy"><span class="development-index">TERRENOS · EN VENTA</span><h2>${escapeHTML(item.name)}</h2><p>${escapeHTML(item.address)} · ${escapeHTML(item.city)}</p>${priceLabel}${facts}${financing}<a class="button-primary" href="${contactUrl(item.name, item.category)}" target="_blank" rel="noopener noreferrer">Consultar a Noelia por WhatsApp</a></div></article>`;
   };
   const content = root.querySelector('[data-development-content]');
   const record = current.find(item => item.id === selected) || (!selected && current.length === 1 ? current[0] : undefined);
   document.title = `${record ? record.name : title} · Del Norte Propiedades`;
   const generalContact = root.querySelector('.development-contact');
-  if (generalContact) generalContact.hidden = Boolean(record);
+  if (generalContact) {
+    generalContact.hidden = Boolean(record);
+    const link = generalContact.querySelector('a');
+    if (link) {
+      link.href = contactUrl(title, category);
+      link.textContent = isLand ? 'Consultar a Noelia por terrenos y loteos' : 'Consultar por WhatsApp';
+    }
+  }
 
   if (heading) heading.innerHTML = `<p class="eyebrow">DESARROLLOS · DEL NORTE</p><h1>${record ? escapeHTML(record.name) : escapeHTML(title)}</h1><p class="section-description">${record ? escapeHTML(record.description) : escapeHTML(lead)}</p>`;
 
@@ -48,7 +58,7 @@
       setupGallery(record);
       return;
     }
-    content.innerHTML = `<article class="development-detail"><div class="development-mark" aria-hidden="true">${isLand ? '01' : '02'}</div><div class="development-detail-copy">${city}${facts}<p class="development-pending">${escapeHTML(record.verification)}</p><a class="button-primary" href="${contactUrl(record.name)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></article>${selected ? `<a class="text-link development-back" href="desarrollos.html?categoria=${category}">${icon('arrow_back')} Volver a ${escapeHTML(title)}</a>` : ''}`;
+    content.innerHTML = `<article class="development-detail"><div class="development-mark" aria-hidden="true">${isLand ? '01' : '02'}</div><div class="development-detail-copy">${city}${facts}<p class="development-pending">${escapeHTML(record.verification)}</p><a class="button-primary" href="${contactUrl(record.name, record.category)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></article>${selected ? `<a class="text-link development-back" href="desarrollos.html?categoria=${category}">${icon('arrow_back')} Volver a ${escapeHTML(title)}</a>` : ''}`;
     return;
   }
 

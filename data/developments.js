@@ -1,7 +1,7 @@
 globalThis.DelNorteDevelopments = [
   {
     id: 'altos-de-la-estancia', category: 'terrenos', name: 'Altos de la Estancia',
-    city: null, description: 'Desarrollo mencionado en las publicaciones de Del Norte Propiedades.',
+    city: null, description: 'Conocé Altos de la Estancia y consultanos por más información.',
     facts: [], source: null, verification: 'Características y condiciones del desarrollo a confirmar.'
   },
   {

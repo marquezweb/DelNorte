@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T13:17:28.618Z",
-  "totalBytes": 21735466,
+  "generatedAt": "2026-10-16T15:24:34.358Z",
+  "totalBytes": 22084147,
   "files": [
     {
       "path": ".gitignore",
@@ -12,11 +12,15 @@
     },
     {
       "path": "app.js",
-      "bytes": 11395
+      "bytes": 13657
     },
     {
       "path": "assets/logo.jpg",
       "bytes": 3601
+    },
+    {
+      "path": "assets/del-norte-propiedades-logo-final.jpg",
+      "bytes": 321952
     },
     {
       "path": "assets/oficina-1440.webp",
@@ -456,11 +460,11 @@
     },
     {
       "path": "catalogo.html",
-      "bytes": 15581
+      "bytes": 19043
     },
     {
       "path": "data/developments.js",
-      "bytes": 3435
+      "bytes": 3432
     },
     {
       "path": "data/featured.js",
@@ -468,15 +472,15 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 14005
+      "bytes": 15028
     },
     {
       "path": "desarrollos.html",
-      "bytes": 6174
+      "bytes": 7124
     },
     {
       "path": "developments.js",
-      "bytes": 11161
+      "bytes": 11571
     },
     {
       "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-01.jpg",
@@ -864,7 +868,7 @@
     },
     {
       "path": "index.html",
-      "bytes": 18705
+      "bytes": 22630
     },
     {
       "path": "package.json",
@@ -880,15 +884,15 @@
     },
     {
       "path": "servicios.html",
-      "bytes": 8404
+      "bytes": 9193
     },
     {
       "path": "site.js",
-      "bytes": 10160
+      "bytes": 10305
     },
     {
       "path": "styles.css",
-      "bytes": 76179
+      "bytes": 89945
     }
   ]
 }

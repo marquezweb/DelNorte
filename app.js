@@ -2,19 +2,43 @@
   const catalog = globalThis.DelNorteCatalog;
   if (!catalog) return;
 
-  const { properties, formatPrice, formatDate, filterProperties, isPublicOpportunity } = catalog;
+  const { properties, formatPrice, filterProperties, isPublicOpportunity } = catalog;
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const icon = name => `<span class="material-symbols-outlined" aria-hidden="true">${name}</span>`;
+  const icon = name => name === 'toilet'
+    ? '<svg class="bathroom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="9" rx="1.5"/><path d="M6 6h1M3 12h18v2H3zM5 14a7 7 0 0 0 13 3l2-3M10 19v2h7v-4"/></svg>'
+    : `<span class="material-symbols-outlined" aria-hidden="true">${name}</span>`;
+  const amenityIcon = feature => {
+    if (/dormitorio/i.test(feature)) return 'bed';
+    if (/baño|toilette/i.test(feature)) return 'toilet';
+    if (/cocina/i.test(feature)) return 'kitchen';
+    if (/living|comedor/i.test(feature)) return 'weekend';
+    if (/lavarropas|lavadero|lavandería/i.test(feature)) return 'local_laundry_service';
+    if (/expensas/i.test(feature)) return 'payments';
+    if (/mascotas/i.test(feature)) return 'pets';
+    if (/hogar|calefacción/i.test(feature)) return 'local_fire_department';
+    if (/depósito/i.test(feature)) return 'inventory_2';
+    if (/agua/i.test(feature)) return 'water_drop';
+    if (/patio/i.test(feature)) return 'yard';
+    if (/sin entrada.*vehículo/i.test(feature)) return 'no_transfer';
+    if (/vehículo|autos|camionetas|motos/i.test(feature)) return 'directions_car';
+    if (/portón/i.test(feature)) return 'garage';
+    if (/ubicad|CEMEP/i.test(feature)) return 'location_on';
+    return 'check_circle';
+  };
   const imageVariant = (path, width) => `assets/properties/${path.replace(/^imagenes\/propiedades\//, '').replace(/\.jpg$/i, '')}-${width}.webp`;
   const cityName = property => property.city === 'rio-grande' ? 'Río Grande' : property.city;
   const priceMarkup = property => property.price == null
     ? 'Consultar precio'
-    : `<span class="price-currency">${property.currency === 'USD' ? 'USD' : '$'}</span><span class="price-amount">${new Intl.NumberFormat('es-AR').format(property.price)}</span>${property.priceNote ? `<span class="price-suffix">${escapeHTML(property.priceNote)}</span>` : ''}`;
+    : `<span class="price-currency">${property.currency === 'USD' ? 'USD' : '$'}</span><span class="price-amount">${new Intl.NumberFormat('es-AR').format(property.price)}</span>${property.priceNote && !property.rentalFormat ? `<span class="price-suffix">${escapeHTML(property.priceNote)}</span>` : ''}`;
 
   function propertyCard(property, featured = false) {
     const operation = property.operation === 'alquiler' ? 'Alquiler' : 'Venta';
     const imageIndex = property.cardPhotoIndex ?? 0;
-    const specs = [property.area != null ? `${new Intl.NumberFormat('es-AR').format(property.area)} m²` : property.areaLabel, property.bedrooms ? `${property.bedrooms} dorm.` : '', property.bathrooms ? `${property.bathrooms} ${property.bathrooms === 1 ? 'baño' : 'baños'}${property.toilets ? ' + toilette' : ''}` : ''].filter(Boolean);
+    const specs = [
+      { label: property.area != null ? `${new Intl.NumberFormat('es-AR').format(property.area)} m²` : property.areaLabel },
+      property.bedrooms ? { icon: 'bed', label: `${property.bedrooms} dorm.` } : null,
+      property.bathrooms ? { icon: 'toilet', label: `${property.bathrooms} ${property.bathrooms === 1 ? 'baño' : 'baños'}${property.toilets ? ' + toilette' : ''}` } : null
+    ].filter(spec => spec?.label);
     return `<article class="property-card ${featured ? 'property-card-featured' : ''}" data-property="${escapeHTML(property.id)}" data-card-operation="${escapeHTML(property.operation)}">
       <div class="property-photo">
         <button type="button" class="photo-button" data-detail="${escapeHTML(property.id)}" aria-label="Ver fotos de ${escapeHTML(property.title)}">
@@ -24,7 +48,7 @@
       <div class="property-body">
         <div class="property-caption"><span class="property-operation-badge">${operation}</span><span class="property-location">${escapeHTML([property.neighborhood, cityName(property)].filter(Boolean).join(' · '))}</span></div>
         <h3 class="property-title"><button type="button" data-detail="${escapeHTML(property.id)}">${escapeHTML(property.title)}</button></h3>
-        ${specs.length ? `<p class="property-specs">${specs.map(spec => `<span>${escapeHTML(spec)}</span>`).join('')}</p>` : ''}
+        ${specs.length ? `<p class="property-specs">${specs.map(spec => `<span>${spec.icon ? icon(spec.icon) : ''}${escapeHTML(spec.label)}</span>`).join('')}</p>` : ''}
         <div class="property-footer-wrap"><div class="property-footer"><span class="property-price">${priceMarkup(property)}</span><button class="card-button" type="button" data-detail="${escapeHTML(property.id)}">Ver propiedad <span class="card-arrow" aria-hidden="true">↗</span></button></div></div>
       </div>
     </article>`;
@@ -54,10 +78,10 @@
     const filtered = filterProperties(properties, state);
     grid.innerHTML = filtered.length
       ? filtered.map(property => propertyCard(property)).join('')
-      : `<div class="empty-results"><h3>No hay publicaciones para estos filtros</h3><p>Probá con otra búsqueda o consultanos por otras opciones.</p><button type="button" class="card-button" data-reset>Limpiar filtros ${icon('arrow_forward')}</button></div>`;
+      : `<div class="empty-results"><h3>No hay propiedades para estos filtros</h3><p>Probá con otra búsqueda o consultanos por otras opciones.</p><button type="button" class="card-button" data-reset>Limpiar filtros ${icon('arrow_forward')}</button></div>`;
     const count = document.querySelector('#result-count');
     if (count) {
-      count.textContent = `${filtered.length} ${filtered.length === 1 ? 'publicación' : 'publicaciones'}`;
+      count.textContent = `${filtered.length} ${filtered.length === 1 ? 'propiedad' : 'propiedades'}`;
     }
     const title = document.querySelector('#catalog-title');
     if (title) title.innerHTML = `Propiedades en <span class="headline-accent">${state.operation === 'alquiler' ? 'alquiler.' : 'venta.'}</span>`;
@@ -116,23 +140,33 @@
     photoIndex = 0; previousFocus = document.activeElement;
     const property = selectedProperty;
     const facts = [
-      property.area != null ? `<div><strong>${property.area} m²</strong><span>${escapeHTML(property.areaLabel.replace(/^[\d.,]+ m²\s*/, '') || 'superficie publicada')}</span></div>` : '',
-      property.bedrooms ? `<div><strong>${property.bedrooms}</strong><span>${property.bedrooms === 1 ? 'Dormitorio' : 'Dormitorios'}</span></div>` : '',
-      property.bathrooms ? `<div><strong>${property.bathrooms}${property.toilets ? ' + 1' : ''}</strong><span>${property.toilets ? 'Baño + toilette' : property.bathrooms === 1 ? 'Baño' : 'Baños'}</span></div>` : ''
+      property.area != null ? `<div><strong>${property.area} m²</strong><span>${escapeHTML(property.areaLabel.replace(/^[\d.,]+ m²\s*/, '') || 'superficie')}</span></div>` : '',
+      property.bedrooms ? `<div><strong>${icon('bed')}${property.bedrooms}</strong><span>${property.bedrooms === 1 ? 'Dormitorio' : 'Dormitorios'}</span></div>` : '',
+      property.bathrooms ? `<div><strong>${icon('toilet')}${property.bathrooms}${property.toilets ? ' + 1' : ''}</strong><span>${property.toilets ? 'Baño + toilette' : property.bathrooms === 1 ? 'Baño' : 'Baños'}</span></div>` : ''
     ].filter(Boolean).join('');
     const address = property.address ? `<p class="detail-address">${escapeHTML(property.address)} · ${cityName(property)}</p>` : '';
-    const features = property.features.length ? `<h3>Características publicadas</h3><ul>${property.features.map(feature => `<li>${escapeHTML(feature)}</li>`).join('')}</ul>` : '';
+    const features = property.features.length ? `<h3>Características</h3><ul class="detail-amenities">${property.features.map(feature => `<li>${icon(amenityIcon(feature))}${escapeHTML(feature)}</li>`).join('')}</ul>` : '';
+    const rentalTerms = property.rentalFormat ? `
+      <section class="detail-rental-section" aria-label="Condiciones del contrato">
+        <h3>Condiciones del contrato</h3>
+        <ul>${property.contractConditions.map(condition => `<li>${escapeHTML(condition)}</li>`).join('')}</ul>
+      </section>
+      <section class="detail-rental-section detail-extra-costs" aria-label="Gastos extra">
+        <h3>${property.extraCosts.length ? 'Gastos extra' : 'Gastos y servicios'}</h3>
+        ${property.extraCosts.length ? `<p>Se abonan por separado y no están incluidos en el precio del alquiler.</p><ul>${property.extraCosts.map(cost => `<li>${escapeHTML(cost)}</li>`).join('')}</ul>` : ''}
+        ${(property.costNotes || []).map(note => `<p>${escapeHTML(note)}</p>`).join('')}
+      </section>` : '';
     const inquiry = `Hola, me interesa ${property.title}. ¿Me comparten más información? ${property.source}`;
     document.querySelector('#detail-content').innerHTML = `
       <span class="detail-eyebrow"><span class="brand-dot"></span>${property.operation === 'alquiler' ? 'Alquiler' : 'Venta'}</span>
       <h2 id="detail-title">${escapeHTML(property.title)}</h2>${address}
+      ${property.rentalFormat ? '<p class="detail-rent-label">Alquiler mensual</p>' : ''}
       <p class="detail-price">${escapeHTML(formatPrice(property))}</p>
       ${property.occupancy ? `<p class="detail-occupancy">${escapeHTML(property.occupancy)}</p>` : ''}
       ${facts ? `<div class="detail-facts">${facts}</div>` : ''}
       <p class="detail-summary">${escapeHTML(property.summary)}</p>${features}
-      ${property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : ''}
-      <a class="detail-contact" href="https://wa.me/${property.whatsapp}?text=${encodeURIComponent(inquiry)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ${icon('arrow_forward')}</a>
-      <p class="detail-source">Fuente: <a href="${property.source}" target="_blank" rel="noopener noreferrer">publicación de Instagram del ${formatDate(property.publishedAt)}</a>.</p>`;
+      ${rentalTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
+      <a class="detail-contact" href="https://wa.me/${property.whatsapp}?text=${encodeURIComponent(inquiry)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ${icon('arrow_forward')}</a>`;
     document.querySelector('#gallery-thumbnails').innerHTML = property.photos.map((src, index) => `<button type="button" data-photo="${index}" aria-label="Ver foto ${index + 1}" aria-current="${index === photoIndex}"><img src="${escapeHTML(imageVariant(src, 160))}" alt="" loading="lazy" width="64" height="64"></button>`).join('');
     updateGallery();
     document.body.classList.add('dialog-open');
