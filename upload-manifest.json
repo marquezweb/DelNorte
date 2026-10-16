@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:48:39.028Z",
-  "totalBytes": 43623424,
+  "generatedAt": "2026-10-16T18:04:32.519Z",
+  "totalBytes": 43624437,
   "files": [
     {
       "path": ".gitignore",
@@ -476,7 +476,7 @@
     },
     {
       "path": "desarrollos.html",
-      "bytes": 7336
+      "bytes": 7337
     },
     {
       "path": "developments.js",
@@ -884,7 +884,7 @@
     },
     {
       "path": "servicios.html",
-      "bytes": 9405
+      "bytes": 9406
     },
     {
       "path": "site.js",
@@ -892,7 +892,7 @@
     },
     {
       "path": "styles.css",
-      "bytes": 91479
+      "bytes": 92490
     },
     {
       "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01.jpg",
