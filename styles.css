@@ -273,6 +273,8 @@ h1,h2,h3,p,figure { margin:0; }
 .selection-bottom { display:flex; justify-content:flex-end; align-items:center; gap:40px; border-top:1px solid var(--line); margin-top:54px; padding-top:24px; }
 .selection-bottom p { color:var(--muted); font-size:13px; max-width:430px; }
 .selection-bottom > div { display:flex; gap:30px; flex:none; }
+.selection-bottom .text-link { color:var(--accent); text-decoration:underline; text-underline-offset:4px; border-bottom:0; }
+.selection-bottom .text-link:hover { color:var(--accent-dark); }
 .catalog-page .catalog-section { padding-top:70px; }
 .catalog-page .section-heading h1 { font-size:clamp(40px,4vw,58px); font-weight:700; line-height:1.15; letter-spacing:-.055em; margin-top:16px; }
 @media(max-width:900px) { .editorial-grid { gap:30px; } .selection-bottom { align-items:flex-start; flex-direction:column; gap:20px; } }
