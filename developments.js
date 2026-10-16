@@ -37,15 +37,6 @@
   const content = root.querySelector('[data-development-content]');
   const record = current.find(item => item.id === selected) || (!selected && current.length === 1 ? current[0] : undefined);
   document.title = `${record ? record.name : title} · Del Norte Propiedades`;
-  const generalContact = root.querySelector('.development-contact');
-  if (generalContact) {
-    generalContact.hidden = Boolean(record);
-    const link = generalContact.querySelector('a');
-    if (link) {
-      link.href = contactUrl(title, category);
-      link.textContent = isLand ? 'Consultar a Noelia por terrenos y loteos' : 'Consultar por WhatsApp';
-    }
-  }
 
   if (heading) heading.innerHTML = `<p class="eyebrow">DESARROLLOS · DEL NORTE</p><h1>${record ? escapeHTML(record.name) : escapeHTML(title)}</h1><p class="section-description">${record ? escapeHTML(record.description) : escapeHTML(lead)}</p>`;
 
