@@ -1561,3 +1561,9 @@ body.dialog-open { overflow:hidden; }
   .pathway-illustration { right:26px; width:39%; height:132px; }
   .pathway-card:has(.pathway-illustration) .pathway-arrow { right:16px; bottom:16px; font-size:24px; }
 }
+
+/* Cada toma mantiene un encuadre propio en escritorio y móvil. */
+#inicio.hero-full .hero-image > img { object-position:var(--hero-photo-position,100% 20%); }
+@media (max-width:639px) {
+  #inicio.hero-full .hero-image > img { object-position:var(--hero-photo-mobile-position,28% 50%); }
+}

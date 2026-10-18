@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T19:56:20.680Z",
-  "totalBytes": 63605174,
+  "generatedAt": "2026-10-18T20:16:34.671Z",
+  "totalBytes": 63605711,
   "files": [
     {
       "path": ".gitignore",
@@ -888,11 +888,11 @@
     },
     {
       "path": "site.js",
-      "bytes": 10938
+      "bytes": 11183
     },
     {
       "path": "styles.css",
-      "bytes": 119675
+      "bytes": 119967
     },
     {
       "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01.jpg",

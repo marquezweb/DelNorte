@@ -112,19 +112,22 @@
         src: 'assets/oficina-1440.webp',
         srcset: 'assets/oficina-768.webp 768w, assets/oficina-1440.webp 1440w',
         alt: 'Frente de la oficina de Del Norte Propiedades y su cartel en Ushuaia N° 536, Barrio Mutual, Río Grande',
-        objectPosition: '100% 20%'
+        objectPosition: '100% 20%',
+        mobileObjectPosition: '28% 50%'
       },
       {
         src: 'assets/oficina-cartel-1440.webp',
         srcset: 'assets/oficina-cartel-768.webp 768w, assets/oficina-cartel-1440.webp 1440w',
         alt: 'Cartel de Del Norte Propiedades junto al frente de la oficina en Río Grande',
-        objectPosition: '100% 0%'
+        objectPosition: '100% 0%',
+        mobileObjectPosition: '100% 0%'
       },
       {
         src: 'assets/oficina-frente-1440.webp',
         srcset: 'assets/oficina-frente-768.webp 768w, assets/oficina-frente-1440.webp 1440w',
         alt: 'Frente de la oficina de Del Norte Propiedades en Río Grande, con su acceso y fachada',
-        objectPosition: '52% 30%'
+        objectPosition: '52% 30%',
+        mobileObjectPosition: '52% 50%'
       }
     ];
     const overlay = heroImage.cloneNode();
@@ -148,7 +151,8 @@
         incomingLayer.src = slide.src;
         incomingLayer.srcset = slide.srcset;
         incomingLayer.alt = slide.alt;
-        incomingLayer.style.objectPosition = slide.objectPosition;
+        incomingLayer.style.setProperty('--hero-photo-position', slide.objectPosition);
+        incomingLayer.style.setProperty('--hero-photo-mobile-position', slide.mobileObjectPosition);
         incomingLayer.removeAttribute('aria-hidden');
         requestAnimationFrame(() => {
           visibleLayer.classList.remove('is-active');
