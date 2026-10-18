@@ -6,6 +6,91 @@
   const archivedPhotoPaths = (date, id, count) => Array.from({ length: count }, (_, index) =>
     `imagenes/archivo-originales-instagram/${date}_${id}/delnorte.propiedades_${id}_${index}.jpg`);
   const sourceFor = id => `https://www.instagram.com/p/${id}/`;
+  const galleryGroups = {
+    DOYygHhANc6: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Ambiente principal', indexes: [6, 7, 8, 9] },
+      { label: 'Cocina', indexes: [3, 4, 5] },
+      { label: 'Baño', indexes: [10, 11] },
+      { label: 'Espacios comunes', indexes: [1, 2] },
+      { label: 'Del Norte Propiedades', indexes: [12] }
+    ],
+    DefbmXRGpWq: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor y acceso', indexes: [3, 2, 1] },
+      { label: 'Cocina', indexes: [4, 5] },
+      { label: 'Dormitorios y circulación', indexes: [9, 10, 11, 12, 8, 7] },
+      { label: 'Baño y toilette', indexes: [13, 6] }
+    ],
+    DYAMViQgJsY: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [1, 3] },
+      { label: 'Cocina', indexes: [2] },
+      { label: 'Dormitorios y placares', indexes: [8, 5, 6] },
+      { label: 'Baños', indexes: [4, 7] },
+      { label: 'Patio', indexes: [9] }
+    ],
+    DeaME7gGqCx: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [1, 6] },
+      { label: 'Cocina', indexes: [2, 3] },
+      { label: 'Dormitorios y circulación', indexes: [9, 14, 13, 7, 8, 10] },
+      { label: 'Baño y toilette', indexes: [5, 11, 12] },
+      { label: 'Patio y exterior', indexes: [4, 15] }
+    ],
+    DdMt6xHmiKp: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [2, 3] },
+      { label: 'Cocina', indexes: [4, 5, 6] },
+      { label: 'Dormitorios y circulación', indexes: [11, 12, 13, 14, 1, 8, 9, 10, 15] },
+      { label: 'Baño y toilette', indexes: [7, 16] }
+    ],
+    DeIXru5mncY: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living con hogar y circulación', indexes: [1, 2, 7] },
+      { label: 'Cocina-comedor', indexes: [4, 5] },
+      { label: 'Dormitorios', indexes: [9, 10] },
+      { label: 'Baño y toilette', indexes: [6, 8] },
+      { label: 'Quincho con parrilla', indexes: [3] },
+      { label: 'Patio', indexes: [11] }
+    ],
+    DeIJre_muqb: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [1, 2, 3] },
+      { label: 'Cocina', indexes: [4, 5, 6] },
+      { label: 'Dormitorios', indexes: [10, 11, 12, 13, 14] },
+      { label: 'Baños', indexes: [7, 9] },
+      { label: 'Lavadero', indexes: [8] },
+      { label: 'Exterior', indexes: [15] }
+    ],
+    Dd9xBY2GjP0: [
+      { label: 'Vista general de la cochera', indexes: [0] },
+      { label: 'Acceso a la cochera', indexes: [1] }
+    ],
+    Dd9vtifGp4z: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Ambiente principal', indexes: [1, 5] },
+      { label: 'Cocina', indexes: [2] },
+      { label: 'Dormitorios y placares', indexes: [4, 6, 7] },
+      { label: 'Baño', indexes: [3, 8] }
+    ],
+    DdXRi7gGlfa: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [1] },
+      { label: 'Cocina', indexes: [2] },
+      { label: 'Dormitorios y circulación', indexes: [4, 5, 3] },
+      { label: 'Baño', indexes: [6] },
+      { label: 'Vista al exterior', indexes: [7] }
+    ],
+    DczHePGmjeT: [
+      { label: 'Fachada', indexes: [0] },
+      { label: 'Living-comedor', indexes: [1] },
+      { label: 'Cocina', indexes: [2, 3] },
+      { label: 'Dormitorio y placard', indexes: [4, 5] },
+      { label: 'Baño', indexes: [6] },
+      { label: 'Acceso', indexes: [7] }
+    ]
+  };
 
   const properties = [
     {
@@ -14,7 +99,7 @@
       address: 'Rivadavia N° 467, entre Lasserre y Mackinlay', bedrooms: 0, bathrooms: null,
       area: 30, areaLabel: '30 m² cubiertos', price: 48000, currency: 'USD',
       availabilityStatus: 'confirmed', publicListing: true,
-      occupancy: 'Alquilado hasta el 30/09/2028 - Renta asegurada', showOccupancyOnCard: true,
+      occupancy: 'Alquilado hasta el 30/09/2028', showOccupancyOnCard: true,
       summary: 'Monoambiente totalmente amoblado de 30 m² cubiertos, ubicado en el primer piso al contrafrente del Edificio Turek Centro, en el centro de Río Grande.',
       features: ['Totalmente amoblado', 'Primer piso al contrafrente', 'Lavandería en el edificio', 'Bajas expensas', 'No apto crédito hipotecario'],
       conditions: 'El precio incluye los muebles. Gastos de sellado y comisión inmobiliaria aparte.',
@@ -87,13 +172,14 @@
       operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
       address: 'Entre Ríos, a pasos de la bicisenda', bedrooms: 2, bathrooms: 1, toilets: 1,
       area: 92, areaLabel: '92 m² cubiertos', semiCoveredArea: 13.86, lotArea: 116,
-      price: 100000, currency: 'USD', availabilityStatus: 'rented', publicListing: false,
-      occupancy: 'Alquilado hasta el 30/06/2027.',
-      summary: 'Dúplex con living con hogar a leña, quincho/lavadero con parrilla y entrada techada.',
-      features: ['Dos dormitorios con placard', '13,86 m² semicubiertos', 'Terreno de 116 m²', 'Baño completo y toilette', 'Cocina y comedor', 'Patio interno'],
-      conditions: 'Alquilado hasta el 30/06/2027.',
+      price: 100000, currency: 'USD', availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: 'Alquilado hasta el 30/06/2027.', showOccupancyOnCard: true,
+      summary: 'Dúplex en venta sobre calle Entre Ríos, a pasos de la bicisenda, en un sector residencial de Barrio Mutual. Una alternativa para inversión, actualmente alquilado hasta el 30/06/2027.',
+      features: ['92 m² cubiertos', '13,86 m² semicubiertos', 'Terreno de 116 m²', 'Dos dormitorios con placard', 'Cocina', 'Comedor', 'Living con hogar a leña', 'Un baño completo y un toilette', 'Quincho/lavadero con parrilla', 'Patio interno', 'Entrada techada para vehículos', 'Apto crédito hipotecario'],
+      conditions: 'Precio más gastos de comisión inmobiliaria y escritura.',
       whatsapp: '5492964610103', cardPhotoIndex: 0,
-      photos: archivedPhotoPaths('2026-10-05', 'DeIXru5mncY', 12)
+      cardPhotoAlt: 'Frente del dúplex en venta sobre calle Entre Ríos, Barrio Mutual',
+      photos: propertyPhotos('duplex-entre-rios-barrio-mutual', 12)
     },
     {
       id: 'DeIJre_muqb', publishedAt: '2026-10-05', title: 'Casa en Barrio Las Barrancas',
@@ -101,7 +187,8 @@
       address: 'Barrio Las Barrancas', bedrooms: 3, bathrooms: 2,
       area: 130, areaLabel: '130 m² construidos', lotArea: 237, price: 170000, currency: 'USD',
       availabilityStatus: 'confirmed', publicListing: true,
-      occupancy: 'Actualmente alquilada y generando renta.',
+      occupancy: 'Actualmente alquilada.',
+      showOccupancyOnCard: true,
       summary: 'Casa amplia, luminosa y funcional de dos plantas, en un entorno residencial de Barrio Las Barrancas. Se ofrece en venta actualmente alquilada, una alternativa para inversión.',
       features: ['130 m² construidos sobre un lote de 237 m²', 'Tres dormitorios', 'Dos baños, uno con ducha', 'Living-comedor amplio y luminoso', 'Cocina y lavadero', 'Depósito bajo escalera', 'Patio amplio con posibilidad de ampliación', 'Excelente iluminación natural', 'Portón y entrada para vehículo', 'Calefacción por caldera y radiadores', 'Aberturas de PVC', 'Apta crédito hipotecario'],
       conditions: 'Alquilada y genera renta. Precio: USD 170.000.',
@@ -197,7 +284,7 @@
       cardPhotoAlt: 'Frente del edificio de departamentos en Gálvez al 500, Barrio Buenavista',
       photos: propertyPhotos('departamentos-barrio-buenavista', 8, { cleanFirst: true })
     }
-  ].map(property => ({ ...property, source: sourceFor(property.id) }));
+  ].map(property => ({ ...property, source: sourceFor(property.id), galleryGroups: galleryGroups[property.id] || [] }));
 
   const formatPrice = property => {
     if (property.price == null) return 'Consultar precio';

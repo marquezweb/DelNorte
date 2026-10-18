@@ -32,7 +32,17 @@
     const priceLabel = `<p class="development-card-price">Contado desde ${escapeHTML(price(item))}</p>${item.financedFrom ? `<p>Financiado desde USD ${new Intl.NumberFormat('es-AR').format(item.financedFrom)} · hasta el 75%</p>` : ''}${item.cashNote ? `<p>${escapeHTML(item.cashNote)}</p>` : ''}`;
     const facts = `<ul class="development-facts">${item.facts.map(fact => `<li>${escapeHTML(fact)}</li>`).join('')}</ul>`;
     const financing = `<div class="development-financing"><h2>Financiación</h2><ul>${item.financing.map(term => `<li>${escapeHTML(term)}</li>`).join('')}</ul></div>`;
-    return `<article class="${articleClass} development-card-with-image development-detail-with-image">${gallery(item)}<div class="development-card-copy development-detail-copy"><span class="development-index">TERRENOS · EN VENTA</span><h2>${escapeHTML(item.name)}</h2><p>${escapeHTML([item.address, item.city].filter(Boolean).join(' · '))}</p>${priceLabel}${facts}${financing}<a class="button-primary" href="${contactUrl(item.name, item.category)}" target="_blank" rel="noopener noreferrer">Consultar a Noelia por WhatsApp</a></div></article>`;
+    return `<article class="${articleClass} development-card-with-image development-detail-with-image development-land">${gallery(item)}<div class="development-card-copy development-detail-copy"><span class="development-index">TERRENOS · EN VENTA</span><h2>${escapeHTML(item.name)}</h2><p>${escapeHTML([item.address, item.city].filter(Boolean).join(' · '))}</p>${priceLabel}${facts}${financing}<a class="button-primary" href="${contactUrl(item.name, item.category)}" target="_blank" rel="noopener noreferrer">Consultar a Noelia por WhatsApp</a></div></article>`;
+  };
+  const buildingProjectMarkup = item => {
+    const groups = item.factGroups || [{ title: 'Características', indexes: item.facts.map((_, index) => index) }];
+    const facts = `<div class="development-fact-groups">${groups.map(group => `<section class="development-fact-group"><h3>${escapeHTML(group.title)}</h3><ul>${group.indexes.map(index => `<li>${escapeHTML(item.facts[index])}</li>`).join('')}</ul></section>`).join('')}</div>`;
+    const financing = item.financingSteps?.length
+      ? `<ol class="development-financing-steps">${item.financingSteps.map(step => `<li><span class="development-step-title">${escapeHTML(step.title)}</span><strong>${escapeHTML(step.value)}</strong><p>${escapeHTML(step.description)}</p></li>`).join('')}</ol>${item.financingNotes?.length ? `<ul class="development-financing-notes">${item.financingNotes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}`
+      : `<ul>${item.financing.map(term => `<li>${escapeHTML(term)}</li>`).join('')}</ul>`;
+    const inquiry = `Hola, me interesa ${item.name}. Quisiera consultar disponibilidad, planos, lista de precios y financiación de las unidades.`;
+    const url = `https://wa.me/5492964617729?text=${encodeURIComponent(inquiry)}`;
+    return `<article class="development-detail development-detail-with-image development-building">${gallery(item)}<div class="development-detail-copy"><span class="development-index">EN POZO · ${escapeHTML(item.city)}</span><h2 class="development-title">${escapeHTML(item.name)}</h2><p class="development-location">${escapeHTML(item.address)} · ${escapeHTML(item.city)}</p><div class="development-price-block">${item.priceFrom ? `<span class="eyebrow">VALORES DE LANZAMIENTO DESDE</span><p class="development-price">${escapeHTML(price(item))}</p>` : '<p class="development-price">Consultar valores</p>'}</div>${facts}</div><div class="development-building-bottom"><section class="development-financing"><h3>${item.financingUntil ? 'Financiación de lanzamiento' : 'Financiación'}</h3>${item.financingUntil ? `<p class="development-financing-deadline">Hasta ${escapeHTML(item.financingUntil.toLowerCase())}.</p>` : ''}${financing}</section><div class="development-building-inquiry"><p class="development-delivery"><span class="eyebrow">ENTREGA ESTIMADA</span><strong>${escapeHTML(item.delivery)}</strong></p><p class="development-note">Consultanos por disponibilidad, planos, lista de precios y financiación de cada unidad.</p><a class="button-primary" href="${url}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div></div></article>`;
   };
   const content = root.querySelector('[data-development-content]');
   const record = current.find(item => item.id === selected) || (!selected && current.length === 1 ? current[0] : undefined);
@@ -50,9 +60,7 @@
       return;
     }
     if (record.image) {
-      const inquiry = `Hola, me interesa ${record.name}. Quisiera consultar disponibilidad, planos, lista de precios y financiación de las unidades.`;
-      const url = `https://wa.me/5492964617729?text=${encodeURIComponent(inquiry)}`;
-      content.innerHTML = `<article class="development-detail development-detail-with-image">${gallery(record)}<div class="development-detail-copy"><p class="development-location">${escapeHTML(record.address)} · ${escapeHTML(record.city)}</p><span class="eyebrow">VALORES DE LANZAMIENTO DESDE</span><p class="development-price">${escapeHTML(price(record))}</p>${facts}<div class="development-financing"><h2>Financiación de lanzamiento</h2><p>Hasta ${escapeHTML(record.financingUntil.toLowerCase())}.</p><ul>${record.financing.map(term => `<li>${escapeHTML(term)}</li>`).join('')}</ul></div><p class="development-delivery"><span class="eyebrow">ENTREGA ESTIMADA</span><strong>${escapeHTML(record.delivery)}</strong></p><p class="development-note">Consultanos por disponibilidad, planos, lista de precios y financiación de cada unidad.</p><a class="button-primary" href="${url}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div></article>${selected ? `<a class="text-link development-back" href="desarrollos.html?categoria=${category}">${icon('arrow_back')} Volver a ${escapeHTML(title)}</a>` : ''}`;
+      content.innerHTML = `${buildingProjectMarkup(record)}${selected ? `<a class="text-link development-back" href="desarrollos.html?categoria=${category}">${icon('arrow_back')} Volver a ${escapeHTML(title)}</a>` : ''}`;
       setupGallery(record);
       return;
     }
@@ -60,8 +68,8 @@
     return;
   }
 
-  content.innerHTML = `<div class="development-grid">${current.map((item, index) => item.category === 'terrenos' && item.photos?.length ? landProjectMarkup(item) : `<article class="development-card ${item.image ? 'development-card-with-image' : ''}">${item.image ? image(item) : ''}<div class="development-card-copy"><span class="development-index">${String(index + 1).padStart(2, '0')} / ${isLand ? 'TERRENOS' : 'EN POZO'}</span><h2>${escapeHTML(item.name)}</h2>${item.city ? `<p>${escapeHTML(item.city)}</p>` : ''}${item.priceFrom ? `<p class="development-card-price">Desde ${escapeHTML(price(item))}</p><p>Monoambientes desde 30,65 m² · Aptos turismo</p><p>Entrega estimada: ${escapeHTML(item.delivery.toLowerCase())}</p>` : `<p>${escapeHTML(item.verification)}</p>`}<a class="text-link" href="desarrollos.html?categoria=${category}&amp;id=${encodeURIComponent(item.id)}">Ver ficha del desarrollo ${icon('north_east')}</a></div></article>`).join('')}</div>`;
-  current.filter(item => item.category === 'terrenos' && item.photos?.length).forEach(setupGallery);
+  content.innerHTML = `<div class="development-grid${isLand ? '' : ' development-full-list'}">${current.map((item, index) => item.category === 'terrenos' && item.photos?.length ? landProjectMarkup(item) : item.category === 'pozo' && item.photos?.length ? buildingProjectMarkup(item) : `<article class="development-card ${item.image ? 'development-card-with-image' : ''}">${item.image ? image(item) : ''}<div class="development-card-copy"><span class="development-index">${String(index + 1).padStart(2, '0')} / ${isLand ? 'TERRENOS' : 'EN POZO'}</span><h2>${escapeHTML(item.name)}</h2>${item.city ? `<p>${escapeHTML(item.city)}</p>` : ''}${item.priceFrom ? `<p class="development-card-price">Desde ${escapeHTML(price(item))}</p>` : '<p class="development-card-price">Consultar valores</p>'}${item.cardSummary ? `<p>${escapeHTML(item.cardSummary)}</p>` : ''}${item.delivery ? `<p>Entrega estimada: ${escapeHTML(item.delivery.toLowerCase())}</p>` : ''}<a class="text-link" href="desarrollos.html?categoria=${category}&amp;id=${encodeURIComponent(item.id)}">Ver ficha del desarrollo ${icon('north_east')}</a></div></article>`).join('')}</div>`;
+  current.filter(item => item.photos?.length).forEach(setupGallery);
 
   function icon(name) { return `<span class="material-symbols-outlined" aria-hidden="true">${name}</span>`; }
 
@@ -91,7 +99,7 @@
         image.alt = entry.label;
       }
     };
-    const update = () => {
+    const update = (autoplay = false) => {
       const entry = media[active];
       const caption = `${active + 1} / ${media.length} · ${entry.label}`;
       showMedia(galleryRoot.querySelector('[data-development-image]'), mainVideo, entry);
@@ -100,13 +108,19 @@
       galleryRoot.querySelector('[data-development-caption]').textContent = caption;
       galleryRoot.querySelectorAll('[data-development-photo]').forEach(button => button.setAttribute('aria-current', String(Number(button.dataset.developmentPhoto) === active)));
       viewer.querySelector('p').textContent = caption;
+      if (autoplay && entry.type === 'video') {
+        root.querySelectorAll('video').forEach(video => video.pause());
+        const video = viewer.open ? viewerVideo : mainVideo;
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      }
     };
-    const move = direction => { active = (active + direction + media.length) % media.length; update(); };
+    const move = direction => { active = (active + direction + media.length) % media.length; update(true); };
     const handleGalleryClick = event => {
       const step = event.target.closest('[data-development-move]');
       const thumbnail = event.target.closest('[data-development-photo]');
       if (step) move(Number(step.dataset.developmentMove));
-      if (thumbnail) { active = Number(thumbnail.dataset.developmentPhoto); update(); }
+      if (thumbnail) { active = Number(thumbnail.dataset.developmentPhoto); update(true); }
       const expand = event.target.closest('[data-development-expand]');
       if (expand) { opener = expand; update(); viewer.showModal(); document.body.classList.add('dialog-open'); viewer.querySelector('[data-development-close]').focus(); }
       if (event.target.closest('[data-development-close]')) viewer.close();

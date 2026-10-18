@@ -12,6 +12,17 @@
   };
   globalThis.DelNorteContact = { prepareWhatsAppURL };
 
+  document.querySelectorAll('.contact-area-card').forEach(card => {
+    const trackPointer = event => card.classList.toggle('is-pointer-hovered', event.pointerType === 'mouse');
+    const clearHover = () => card.classList.remove('is-pointer-hovered');
+    card.addEventListener('pointerenter', trackPointer);
+    card.addEventListener('pointermove', trackPointer);
+    card.addEventListener('pointerleave', clearHover);
+    card.addEventListener('pointercancel', clearHover);
+    card.addEventListener('pointerdown', event => { if (event.pointerType !== 'mouse') clearHover(); });
+    window.addEventListener('blur', clearHover);
+  });
+
   const floatingContact = document.querySelector('.floating-contact');
   if (floatingContact) {
     const syncFloatingContact = () => {

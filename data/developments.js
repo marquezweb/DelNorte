@@ -1,5 +1,38 @@
 globalThis.DelNorteDevelopments = [
   {
+    id: 'deloqui-1548', category: 'pozo', name: 'Deloqui 1548',
+    city: 'Ushuaia', address: 'Deloqui N° 1548, entre Onas y Gobernador Paz',
+    description: 'Departamentos en pozo en una zona céntrica de Ushuaia, aptos para turismo y uso profesional, con vistas al Canal de Beagle y a la montaña.',
+    cardSummary: 'Aptos turismo y uso profesional · Vistas al canal y la montaña',
+    facts: ['Unidades aptas turismo y uso profesional', 'Unidades al frente con vista a la montaña', 'Unidades al contrafrente con vista al Canal de Beagle', 'Construcción en hormigón', 'Calefacción por losa radiante', 'Aberturas de PVC', 'Ascensor', 'Pisos de porcelanato', 'Conexiones independientes para lavarropas', 'Algunas unidades con balcón'],
+    factGroups: [
+      { title: 'Uso y vistas', indexes: [0, 1, 2] },
+      { title: 'Construcción y confort', indexes: [3, 4, 5, 7] },
+      { title: 'Equipamiento', indexes: [6, 8, 9] }
+    ],
+    delivery: 'Marzo de 2027',
+    financing: ['Reserva con el 5% del valor de la unidad', 'Al firmar el Boleto de Compraventa se completa el 40% del valor', 'Saldo del 60% en 30 cuotas en pesos ajustadas por el Índice de la Cámara de la Construcción, con 3 refuerzos en dólares'],
+    financingSteps: [
+      { title: 'Reserva', value: '5%', description: 'Del valor de la unidad.' },
+      { title: 'Boleto de compraventa', value: '40%', description: 'Completás el 40% del valor, incluyendo la reserva.' },
+      { title: 'Saldo', value: '60%', description: 'En 30 cuotas en pesos.' }
+    ],
+    financingNotes: ['Cuotas ajustadas por el Índice de la Cámara de la Construcción.', 'El plan incluye 3 refuerzos en dólares.'],
+    image: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-01.jpg',
+    imageAlt: 'Render de la fachada del proyecto Deloqui 1548 en Ushuaia',
+    photos: [
+      { label: 'Render del proyecto · Fachada', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-01.jpg' },
+      { label: 'Obra · Fachada en noviembre de 2025', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-02.jpg' },
+      { label: 'Obra · Interior en noviembre de 2025', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-07.jpg' },
+      { label: 'Vista al Canal de Beagle desde una unidad', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-03.jpg' },
+      { label: 'Vista panorámica hacia el canal', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-04.jpg' },
+      { label: 'Vista de la ciudad y las montañas', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-05.jpg' },
+      { label: 'Vista hacia la calle Deloqui y la montaña', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-06.jpg' },
+      { label: 'Ubicación señalada de Deloqui 1548', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-08.jpg' }
+    ],
+    source: 'https://www.instagram.com/p/DRh-vkoDxsS/', verification: null
+  },
+  {
     id: 'altos-y-duplex-de-la-mision', category: 'terrenos', name: 'Altos de la Misión y Dúplex de la Misión',
     city: 'Río Grande',
     description: 'Lotes unifamiliares y multifamiliares según la zona, con servicios soterrados y financiación en dólares.',
@@ -80,12 +113,22 @@ globalThis.DelNorteDevelopments = [
   },
   {
     id: 'gobernador-campos-309', category: 'pozo', name: 'Gobernador Campos 309',
+    cardSummary: 'Monoambientes desde 30,65 m² · Aptos turismo',
     city: 'Ushuaia', description: 'Lanzamiento en pozo a tres cuadras de Av. San Martín, con vistas hacia la Bahía de Ushuaia y las montañas.',
     address: 'Gobernador Campos 309, esquina Godoy',
     facts: ['Unidades aptas turismo', 'Monoambientes desde 30,65 m² cubiertos', 'Planos municipales aprobados'],
+    factGroups: [
+      { title: 'Unidades y uso', indexes: [0, 1] },
+      { title: 'Proyecto', indexes: [2] }
+    ],
     priceFrom: 85820, currency: 'USD', delivery: 'Septiembre de 2029',
     financingUntil: 'Diciembre de 2026',
     financing: ['25% de entrega al Boleto de Compraventa', '3 refuerzos de USD 10.000 en las cuotas 12, 18 y 24', 'Saldo hasta en 40 cuotas en pesos, ajustadas por índice CAC'],
+    financingSteps: [
+      { title: 'Boleto de compraventa', value: '25%', description: 'Entrega inicial del valor de la unidad.' },
+      { title: '3 refuerzos', value: 'USD 10.000', description: 'Cada uno, en las cuotas 12, 18 y 24.' },
+      { title: 'Saldo', value: 'Hasta 40 cuotas', description: 'En pesos, ajustadas por índice CAC.' }
+    ],
     image: 'imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-01.jpg',
     imageAlt: 'Render del edificio proyectado en Gobernador Campos 309, esquina Godoy, Ushuaia',
     photos: [

@@ -49,7 +49,7 @@
         <div class="property-caption"><span class="property-operation-badge">${operation}</span><span class="property-location">${escapeHTML([property.neighborhood, cityName(property)].filter(Boolean).join(' · '))}</span></div>
         <h3 class="property-title"><button type="button" data-detail="${escapeHTML(property.id)}">${escapeHTML(property.title)}</button></h3>
         ${specs.length ? `<p class="property-specs">${specs.map(spec => `<span>${spec.icon ? icon(spec.icon) : ''}${escapeHTML(spec.label)}</span>`).join('')}</p>` : ''}
-        ${property.showOccupancyOnCard && property.occupancy ? `<p class="property-occupancy">${escapeHTML(property.occupancy)}</p>` : ''}
+        ${property.showOccupancyOnCard && property.occupancy ? `<p class="property-occupancy occupancy-badge"><span>${escapeHTML(property.occupancy)}</span></p>` : ''}
         <div class="property-footer-wrap"><div class="property-footer"><span class="property-price">${priceMarkup(property)}</span><button class="card-button" type="button" data-detail="${escapeHTML(property.id)}">Ver propiedad <span class="card-arrow" aria-hidden="true">↗</span></button></div></div>
       </div>
     </article>`;
@@ -129,8 +129,9 @@
     if (!selectedProperty) return;
     const image = document.querySelector('#gallery-image');
     image.src = selectedProperty.photos[photoIndex];
-    image.alt = `${selectedProperty.title} · fotografía ${photoIndex + 1} de ${selectedProperty.photos.length}`;
-    document.querySelector('#gallery-count').textContent = `Foto ${photoIndex + 1} de ${selectedProperty.photos.length}`;
+    const label = selectedProperty.photoLabels?.[photoIndex];
+    image.alt = `${selectedProperty.title}${label ? ` · ${label}` : ''} · fotografía ${photoIndex + 1} de ${selectedProperty.photos.length}`;
+    document.querySelector('#gallery-count').textContent = `Foto ${photoIndex + 1} de ${selectedProperty.photos.length}${label ? ` · ${label}` : ''}`;
     document.querySelectorAll('[data-photo]').forEach(button => button.setAttribute('aria-current', String(Number(button.dataset.photo) === photoIndex)));
   }
 
@@ -138,6 +139,11 @@
     if (!dialog) return;
     selectedProperty = properties.find(property => property.id === id && isPublicOpportunity(property));
     if (!selectedProperty) return;
+    if (selectedProperty.galleryGroups?.length) {
+      const original = selectedProperty;
+      const entries = original.galleryGroups.flatMap(group => group.indexes.map(index => ({ src: original.photos[index], label: group.label })));
+      selectedProperty = { ...original, photos: entries.map(entry => entry.src), photoLabels: entries.map(entry => entry.label) };
+    }
     photoIndex = 0; previousFocus = document.activeElement;
     const property = selectedProperty;
     const facts = [
@@ -163,7 +169,7 @@
       <h2 id="detail-title">${escapeHTML(property.title)}</h2>${address}
       ${property.rentalFormat ? '<p class="detail-rent-label">Alquiler mensual</p>' : ''}
       <p class="detail-price">${escapeHTML(formatPrice(property))}</p>
-      ${property.occupancy ? `<p class="detail-occupancy">${escapeHTML(property.occupancy)}</p>` : ''}
+      ${property.occupancy ? `<p class="detail-occupancy${property.showOccupancyOnCard ? ' occupancy-badge' : ''}"><span>${escapeHTML(property.occupancy)}</span></p>` : ''}
       ${facts ? `<div class="detail-facts">${facts}</div>` : ''}
       <p class="detail-summary">${escapeHTML(property.summary)}</p>${features}
       ${rentalTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
