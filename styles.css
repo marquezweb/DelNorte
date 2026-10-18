@@ -1526,3 +1526,38 @@ body.dialog-open { overflow:hidden; }
   #inicio.hero-full .hero-copy { padding:36px 20px 124px; }
   #inicio.hero-full .hero-copy h1 { font-size:clamp(42px,11vw,54px); }
 }
+
+/* Dos pesos tipográficos para dar ritmo al mensaje principal. */
+#inicio.hero-full .hero-copy h1 { line-height:1.04; }
+#inicio.hero-full .hero-copy h1 .hero-title-intro {
+  display:block;
+  color:inherit;
+  font-family:inherit;
+  font-size:inherit;
+  font-style:normal;
+  font-weight:400;
+  line-height:inherit;
+  letter-spacing:inherit;
+}
+#inicio.hero-full .hero-copy h1 .hero-title-focus {
+  display:block;
+  font-weight:700;
+}
+
+/* Ilustraciones editoriales para los accesos a desarrollos. */
+.pathway-card:has(.pathway-illustration) { min-height:196px; overflow:hidden; padding:28px 32px; }
+.pathway-card:has(.pathway-illustration) .eyebrow,
+.pathway-card:has(.pathway-illustration) h2 { position:relative; z-index:1; max-width:48%; }
+.pathway-card:has(.pathway-illustration) h2 { font-size:clamp(24px,2vw,30px); }
+.pathway-illustration { position:absolute; right:48px; top:50%; width:40%; height:170px; object-fit:contain; transform:translateY(-50%); pointer-events:none; }
+.pathway-card:has(.pathway-illustration) .pathway-arrow { z-index:1; right:22px; bottom:22px; }
+@media (max-width:1023px) {
+  .pathway-card:has(.pathway-illustration) { min-height:180px; padding:24px; }
+  .pathway-illustration { right:34px; height:148px; }
+}
+@media (max-width:479px) {
+  .pathway-card:has(.pathway-illustration) { min-height:172px; padding:20px; }
+  .pathway-card:has(.pathway-illustration) h2 { max-width:48%; font-size:24px; }
+  .pathway-illustration { right:26px; width:39%; height:132px; }
+  .pathway-card:has(.pathway-illustration) .pathway-arrow { right:16px; bottom:16px; font-size:24px; }
+}
