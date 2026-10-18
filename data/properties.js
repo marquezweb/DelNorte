@@ -9,6 +9,20 @@
 
   const properties = [
     {
+      id: 'DOYygHhANc6', publishedAt: '2025-09-09', title: 'Monoambiente amoblado en Edificio Turek Centro',
+      operation: 'venta', type: 'monoambientes', city: 'rio-grande', neighborhood: 'Zona Centro',
+      address: 'Rivadavia N° 467, entre Lasserre y Mackinlay', bedrooms: 0, bathrooms: null,
+      area: 30, areaLabel: '30 m² cubiertos', price: 48000, currency: 'USD',
+      availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: 'Alquilado hasta el 30/09/2028 - Renta asegurada', showOccupancyOnCard: true,
+      summary: 'Monoambiente totalmente amoblado de 30 m² cubiertos, ubicado en el primer piso al contrafrente del Edificio Turek Centro, en el centro de Río Grande.',
+      features: ['Totalmente amoblado', 'Primer piso al contrafrente', 'Lavandería en el edificio', 'Bajas expensas', 'No apto crédito hipotecario'],
+      conditions: 'El precio incluye los muebles. Gastos de sellado y comisión inmobiliaria aparte.',
+      whatsapp: '5492964610103', cardPhotoIndex: 0,
+      cardPhotoAlt: 'Frente del Edificio Turek Centro en Rivadavia N° 467, Río Grande',
+      photos: propertyPhotos('monoambiente-amoblado-turek-centro', 13)
+    },
+    {
       id: 'DefbmXRGpWq', publishedAt: '2026-10-14', title: 'Dúplex en Ushuaia al 700',
       operation: 'alquiler', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
       address: 'Ushuaia al 700, Barrio Mutual', bedrooms: 2, bathrooms: 1, toilets: 1,

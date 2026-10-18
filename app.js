@@ -49,6 +49,7 @@
         <div class="property-caption"><span class="property-operation-badge">${operation}</span><span class="property-location">${escapeHTML([property.neighborhood, cityName(property)].filter(Boolean).join(' · '))}</span></div>
         <h3 class="property-title"><button type="button" data-detail="${escapeHTML(property.id)}">${escapeHTML(property.title)}</button></h3>
         ${specs.length ? `<p class="property-specs">${specs.map(spec => `<span>${spec.icon ? icon(spec.icon) : ''}${escapeHTML(spec.label)}</span>`).join('')}</p>` : ''}
+        ${property.showOccupancyOnCard && property.occupancy ? `<p class="property-occupancy">${escapeHTML(property.occupancy)}</p>` : ''}
         <div class="property-footer-wrap"><div class="property-footer"><span class="property-price">${priceMarkup(property)}</span><button class="card-button" type="button" data-detail="${escapeHTML(property.id)}">Ver propiedad <span class="card-arrow" aria-hidden="true">↗</span></button></div></div>
       </div>
     </article>`;

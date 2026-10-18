@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T19:28:40.266Z",
-  "totalBytes": 43630817,
+  "generatedAt": "2026-10-18T13:29:03.835Z",
+  "totalBytes": 59441608,
   "files": [
     {
       "path": ".gitignore",
@@ -12,7 +12,7 @@
     },
     {
       "path": "app.js",
-      "bytes": 13657
+      "bytes": 13796
     },
     {
       "path": "assets/logo.jpg",
@@ -464,7 +464,7 @@
     },
     {
       "path": "data/developments.js",
-      "bytes": 4934
+      "bytes": 8194
     },
     {
       "path": "data/featured.js",
@@ -472,7 +472,7 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 16425
+      "bytes": 17610
     },
     {
       "path": "desarrollos.html",
@@ -1141,6 +1141,154 @@
     {
       "path": "imagenes/desarrollos/las-barrancas-ii/las-barrancas-ii-01-limpia.jpg",
       "bytes": 478293
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-01.jpg",
+      "bytes": 230213
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-02.jpg",
+      "bytes": 168897
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-03.jpg",
+      "bytes": 184902
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-04.jpg",
+      "bytes": 98310
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-05.jpg",
+      "bytes": 132138
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-06.jpg",
+      "bytes": 142701
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-07.jpg",
+      "bytes": 187611
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-08.jpg",
+      "bytes": 132967
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-09.jpg",
+      "bytes": 222874
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-10.jpg",
+      "bytes": 147347
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-11.jpg",
+      "bytes": 111985
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-12.jpg",
+      "bytes": 138645
+    },
+    {
+      "path": "imagenes/propiedades/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-13.jpg",
+      "bytes": 58006
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-01-1280.webp",
+      "bytes": 156506
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-01-160.webp",
+      "bytes": 9232
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-01-640.webp",
+      "bytes": 72394
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-02-160.webp",
+      "bytes": 4764
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-03-160.webp",
+      "bytes": 6354
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-04-160.webp",
+      "bytes": 3604
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-05-160.webp",
+      "bytes": 4418
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-06-160.webp",
+      "bytes": 5700
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-07-160.webp",
+      "bytes": 7042
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-08-160.webp",
+      "bytes": 6014
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-09-160.webp",
+      "bytes": 8096
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-10-160.webp",
+      "bytes": 6288
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-11-160.webp",
+      "bytes": 4570
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-12-160.webp",
+      "bytes": 5628
+    },
+    {
+      "path": "assets/properties/monoambiente-amoblado-turek-centro/monoambiente-amoblado-turek-centro-13-160.webp",
+      "bytes": 3408
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-01.jpg",
+      "bytes": 1151796
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-02.jpg",
+      "bytes": 1273284
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-03.jpg",
+      "bytes": 237844
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-01.mp4",
+      "bytes": 3383716
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-02.mp4",
+      "bytes": 1990542
+    },
+    {
+      "path": "imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-03.mp4",
+      "bytes": 4753821
+    },
+    {
+      "path": "imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-01.jpg",
+      "bytes": 198085
+    },
+    {
+      "path": "imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-02.jpg",
+      "bytes": 241732
+    },
+    {
+      "path": "imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-03.jpg",
+      "bytes": 314773
     }
   ]
 }

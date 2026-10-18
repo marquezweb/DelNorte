@@ -1,5 +1,44 @@
 globalThis.DelNorteDevelopments = [
   {
+    id: 'altos-y-duplex-de-la-mision', category: 'terrenos', name: 'Altos de la Misión y Dúplex de la Misión',
+    city: 'Río Grande',
+    description: 'Lotes unifamiliares y multifamiliares según la zona, con servicios soterrados y financiación en dólares.',
+    facts: ['Lotes desde 240 m²', 'Servicios soterrados', 'Cordón cuneta y algunos sectores con asfalto', 'Uso unifamiliar o multifamiliar según la zona', 'Listos para construir', 'Consultar por lotes de tipo comercial'],
+    priceFrom: 15960, currency: 'USD',
+    cashNote: 'Valor desde para un lote unifamiliar de 240 m². Gastos aparte. Consultar disponibilidad y valores vigentes por zona.',
+    financing: ['Entrega inicial del 50%', 'Saldo en hasta 18 o 24 cuotas en dólares, según la zona'],
+    image: 'imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-01.jpg',
+    imageAlt: 'Calle con cordón cuneta y alumbrado en Altos de la Misión, Río Grande',
+    photos: [
+      { label: 'Vista de la calle y el alumbrado del barrio', src: 'imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-01.jpg' },
+      { label: 'Vista de los lotes y el cordón cuneta', src: 'imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-02.jpg' },
+      { label: 'Plano de Altos de la Misión · Etapa II · Macizo 182', src: 'imagenes/desarrollos/altos-y-duplex-de-la-mision/altos-y-duplex-de-la-mision-03.jpg' }
+    ],
+    source: 'https://www.instagram.com/p/DRSWfrVD51J/', verification: null
+  },
+  {
+    id: 'costa-norte-ii', category: 'terrenos', name: 'Costa Norte II',
+    city: 'Río Grande', address: 'A pasos de la Ruta Nacional N° 3',
+    description: 'Lotes residenciales aptos para viviendas multifamiliares, dúplex y PH, listos para construir y escriturar, con financiación en dólares.',
+    facts: ['Aptos para viviendas multifamiliares, dúplex y PH', 'A pasos de la Ruta Nacional N° 3', 'Listos para construir', 'Escritura inmediata', 'Entrega del lote inmediata', 'No aptos para casillas'],
+    priceFrom: 19000, currency: 'USD',
+    cashNote: 'Gastos de escritura y comisión inmobiliaria aparte.',
+    financing: ['Entrega inicial del 40%', 'Saldo en 18 cuotas fijas en dólares'],
+    image: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-01.jpg',
+    imageAlt: 'Vista aérea de los terrenos de Costa Norte II y la costa de Río Grande',
+    photos: [
+      { label: 'Vista aérea de los terrenos y la costa', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-01.jpg' },
+      { label: 'Vista aérea del barrio junto a la Ruta 3', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-02.jpg' },
+      { label: 'Ubicación de los macizos 81 y 87', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-03.jpg' }
+    ],
+    videos: [
+      { label: 'Recorrido aéreo · Video 1', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-01.mp4' },
+      { label: 'Recorrido aéreo · Video 2', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-02.mp4' },
+      { label: 'Recorrido aéreo · Video 3', src: 'imagenes/desarrollos/costa-norte-ii/costa-norte-ii-video-03.mp4' }
+    ],
+    source: 'https://www.instagram.com/p/DYfGCdSgFls/', verification: null
+  },
+  {
     id: 'altos-de-la-estancia', category: 'terrenos', name: 'Altos de la Estancia',
     city: 'Río Grande', address: 'Barrio Altos de la Estancia',
     description: 'Terrenos para viviendas unifamiliares en un barrio totalmente pavimentado, con servicios soterrados y lotes listos para construir.',
