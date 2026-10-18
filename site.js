@@ -112,19 +112,19 @@
         src: 'assets/oficina-1440.webp',
         srcset: 'assets/oficina-768.webp 768w, assets/oficina-1440.webp 1440w',
         alt: 'Frente de la oficina de Del Norte Propiedades y su cartel en Ushuaia N° 536, Barrio Mutual, Río Grande',
-        objectPosition: '100% 60%'
+        objectPosition: '100% 20%'
       },
       {
         src: 'assets/oficina-cartel-1440.webp',
         srcset: 'assets/oficina-cartel-768.webp 768w, assets/oficina-cartel-1440.webp 1440w',
         alt: 'Cartel de Del Norte Propiedades junto al frente de la oficina en Río Grande',
-        objectPosition: '100% 58%'
+        objectPosition: '100% 0%'
       },
       {
         src: 'assets/oficina-frente-1440.webp',
         srcset: 'assets/oficina-frente-768.webp 768w, assets/oficina-frente-1440.webp 1440w',
         alt: 'Frente de la oficina de Del Norte Propiedades en Río Grande, con su acceso y fachada',
-        objectPosition: '52% 56%'
+        objectPosition: '52% 30%'
       }
     ];
     const overlay = heroImage.cloneNode();
