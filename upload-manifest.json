@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T20:31:13.840Z",
-  "totalBytes": 92610937,
+  "generatedAt": "2026-10-19T20:37:01.528Z",
+  "totalBytes": 92611254,
   "files": [
     {
       "path": ".gitignore",
@@ -12,7 +12,7 @@
     },
     {
       "path": "app.js",
-      "bytes": 15629
+      "bytes": 15909
     },
     {
       "path": "assets/logo.jpg",
@@ -472,7 +472,7 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 23986
+      "bytes": 24023
     },
     {
       "path": "desarrollos.html",
