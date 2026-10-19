@@ -1458,7 +1458,7 @@ body.dialog-open { overflow:hidden; }
 #inicio.hero-full .hero-layout { position:relative; isolation:isolate; display:flex; align-items:center; min-height:clamp(720px,43vw,820px); }
 #inicio.hero-full .hero-figure { position:absolute; z-index:0; inset:0; width:100%; height:100%; max-width:100%; min-width:0; min-height:0; aspect-ratio:auto; }
 #inicio.hero-full .hero-image { inset:0; background:var(--ink); }
-#inicio.hero-full .hero-image > img { object-position:100% 20%; filter:none; }
+#inicio.hero-full .hero-image > img { object-position:100% 50%; filter:none; }
 #inicio.hero-full .hero-figure::after { content:""; z-index:1; background:linear-gradient(90deg,rgb(14 18 21 / 84%) 0%,rgb(14 18 21 / 70%) 31%,rgb(14 18 21 / 35%) 60%,rgb(14 18 21 / 15%) 100%),linear-gradient(0deg,rgb(14 18 21 / 52%),transparent 32%); }
 #inicio.hero-full .hero-copy { z-index:2; width:min(100%,780px); padding:64px 32px 112px var(--hero-content-inset); background:transparent; color:var(--paper); }
 #inicio.hero-full .hero-copy > .eyebrow { color:var(--paper); margin:0; font-size:12px; letter-spacing:.12em; }
@@ -1563,7 +1563,7 @@ body.dialog-open { overflow:hidden; }
 }
 
 /* Cada toma mantiene un encuadre propio en escritorio y móvil. */
-#inicio.hero-full .hero-image > img { object-position:var(--hero-photo-position,100% 20%); }
+#inicio.hero-full .hero-image > img { object-position:var(--hero-photo-position,100% 50%); }
 @media (max-width:639px) {
   #inicio.hero-full .hero-image > img { object-position:var(--hero-photo-mobile-position,28% 50%); }
 }
@@ -1573,3 +1573,26 @@ body.dialog-open { overflow:hidden; }
 .gallery-stage > [hidden] { display:none; }
 .gallery-thumbnails button { position:relative; }
 .property-video-badge { position:absolute; inset:0; display:grid; place-items:center; color:#fff; font-size:22px; background:rgb(0 0 0 / 20%); text-shadow:0 1px 4px rgb(0 0 0 / 65%); }
+
+/* Aprovechar todo el ancho y priorizar los elementos importantes de cada toma. */
+#inicio.hero-full .hero-figure::after {
+  background:linear-gradient(90deg,rgb(14 18 21 / 74%) 0%,rgb(14 18 21 / 60%) 32%,rgb(14 18 21 / 25%) 65%,rgb(14 18 21 / 12%) 100%),linear-gradient(0deg,rgb(14 18 21 / 45%),transparent 35%);
+}
+@media (max-width:639px) {
+  #inicio.hero-full .hero-figure::after { background:linear-gradient(90deg,rgb(14 18 21 / 48%),rgb(14 18 21 / 12%)),linear-gradient(180deg,rgb(14 18 21 / 25%) 0%,transparent 62%,rgb(14 18 21 / 48%) 100%); }
+  #inicio.hero-full .hero-copy { text-shadow:0 1px 4px rgb(0 0 0 / 45%); }
+}
+
+/* Algo más de alto permite conservar fachada, acceso y rótulos del cartel. */
+@media (min-width:1200px) {
+  #inicio.hero-full .hero-layout { min-height:clamp(680px,43.75vw,840px); }
+}
+
+/* En móvil, un marco menos alargado conserva más ancho de las fotografías. */
+@media (max-width:639px) {
+  #inicio.hero-full .hero-layout { min-height:620px; }
+  #inicio.hero-full .hero-copy { padding:28px 20px 112px; }
+  #inicio.hero-full .hero-copy h1 { margin-top:20px; font-size:clamp(40px,10.5vw,52px); }
+  #inicio.hero-full .hero-description { margin-top:16px; }
+  #inicio.hero-full .hero-actions { margin-top:20px; }
+}

@@ -112,22 +112,18 @@
         src: 'assets/oficina-1440.webp',
         srcset: 'assets/oficina-768.webp 768w, assets/oficina-1440.webp 1440w',
         alt: 'Frente de la oficina de Del Norte Propiedades y su cartel en Ushuaia N° 536, Barrio Mutual, Río Grande',
-        objectPosition: '100% 20%',
+        objectPosition: '100% 50%',
         mobileObjectPosition: '28% 50%'
       },
       {
-        src: 'assets/oficina-cartel-1440.webp',
-        srcset: 'assets/oficina-cartel-768.webp 768w, assets/oficina-cartel-1440.webp 1440w',
-        alt: 'Cartel de Del Norte Propiedades junto al frente de la oficina en Río Grande',
-        objectPosition: '100% 0%',
-        mobileObjectPosition: '100% 0%'
-      },
-      {
-        src: 'assets/oficina-frente-1440.webp',
-        srcset: 'assets/oficina-frente-768.webp 768w, assets/oficina-frente-1440.webp 1440w',
-        alt: 'Frente de la oficina de Del Norte Propiedades en Río Grande, con su acceso y fachada',
-        objectPosition: '52% 30%',
-        mobileObjectPosition: '52% 50%'
+        src: 'assets/oficina-fachada-amplia-1440.webp',
+        srcset: 'assets/oficina-fachada-amplia-768.webp 768w, assets/oficina-fachada-amplia-1440.webp 1440w',
+        alt: 'Vista abierta de la fachada y el acceso de Del Norte Propiedades en Río Grande',
+        mobileSrc: 'assets/oficina-cartel-vertical-1440.webp',
+        mobileSrcset: 'assets/oficina-cartel-vertical-768.webp 768w, assets/oficina-cartel-vertical-1440.webp 1440w',
+        mobileAlt: 'Cartel y oficina de Del Norte Propiedades en una toma vertical abierta',
+        objectPosition: '50% 50%',
+        mobileObjectPosition: '100% 50%'
       }
     ];
     const overlay = heroImage.cloneNode();
@@ -143,7 +139,10 @@
     window.setInterval(() => {
       if (document.hidden) return;
       const nextSlide = (activeSlide + 1) % slides.length;
-      const slide = slides[nextSlide];
+      const source = slides[nextSlide];
+      const slide = source.mobileSrc && window.matchMedia('(max-width: 639px)').matches
+        ? { ...source, src: source.mobileSrc, srcset: source.mobileSrcset, alt: source.mobileAlt }
+        : source;
       const preloaded = new Image();
       preloaded.sizes = heroImage.sizes;
       preloaded.srcset = slide.srcset;

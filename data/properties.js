@@ -97,6 +97,29 @@
 
   const properties = [
     {
+      id: 'indira-gandhi-833', publishedAt: '2026-10-19', title: 'Dúplex en Indira Gandhi 833',
+      operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio CGT',
+      address: 'Indira Gandhi N° 833, Barrio CGT', bedrooms: 2, bathrooms: 1, toilets: 1,
+      area: 80, areaLabel: '80 m² cubiertos aprox.', price: 85000, currency: 'USD',
+      availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: 'Alquilado hasta el 01/02/2027.', showOccupancyOnCard: true,
+      summary: 'Dúplex de aproximadamente 80 m² cubiertos en Barrio CGT, con dos dormitorios con placard, patio trasero y entrada para vehículo. En venta con contrato de alquiler vigente.',
+      features: ['80 m² cubiertos aproximadamente', 'Dos dormitorios con placard', 'Cocina', 'Living-comedor', 'Baño completo en planta alta y toilette en planta baja', 'Patio trasero', 'Calefacción por caldera y radiadores', 'Entrada para vehículo'],
+      conditions: 'Alquilado hasta el 01/02/2027, con ajuste por IPC cada seis meses. Valor de alquiler informado para 03/2026: $896.000.',
+      source: 'Ficha proporcionada por Del Norte Propiedades.',
+      whatsapp: '5492964610103', cardPhotoIndex: 0, heroPhotoIndex: 0,
+      cardPhotoAlt: 'Frente del dúplex en Indira Gandhi 833, Barrio CGT',
+      photos: propertyPhotos('duplex-indira-gandhi-833', 11),
+      galleryGroups: [
+        { label: 'Frente', indexes: [0] },
+        { label: 'Living-comedor', indexes: [1, 2, 3, 4] },
+        { label: 'Cocina', indexes: [5] },
+        { label: 'Toilette en planta baja', indexes: [6] },
+        { label: 'Dormitorios y placares', indexes: [7, 8] },
+        { label: 'Antebaño y baño en planta alta', indexes: [9, 10] }
+      ]
+    },
+    {
       id: 'DOYygHhANc6', publishedAt: '2025-09-09', title: 'Monoambiente amoblado en Edificio Turek Centro',
       operation: 'venta', type: 'monoambientes', city: 'rio-grande', neighborhood: 'Zona Centro',
       address: 'Rivadavia N° 467, entre Lasserre y Mackinlay', bedrooms: 0, bathrooms: null,
@@ -289,7 +312,7 @@
       cardPhotoAlt: 'Frente del edificio de departamentos en Gálvez al 500, Barrio Buenavista',
       photos: propertyPhotos('departamentos-barrio-buenavista', 8, { cleanFirst: true })
     }
-  ].map(property => ({ ...property, source: property.source || sourceFor(property.id), galleryGroups: galleryGroups[property.id] || [] }));
+  ].map(property => ({ ...property, source: property.source || sourceFor(property.id), galleryGroups: galleryGroups[property.id] || property.galleryGroups || [] }));
 
   const formatPrice = property => {
     if (property.price == null) return 'Consultar precio';
