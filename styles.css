@@ -1596,3 +1596,7 @@ body.dialog-open { overflow:hidden; }
   #inicio.hero-full .hero-description { margin-top:16px; }
   #inicio.hero-full .hero-actions { margin-top:20px; }
 }
+
+/* La ciudad destaca en los encabezados de edificios en pozo. */
+.development-building-heading { display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; }
+.development-building-heading .development-city { color:var(--accent-text); font-size:20px; font-weight:700; line-height:1.3; letter-spacing:.02em; }
