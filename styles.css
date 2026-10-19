@@ -1567,3 +1567,9 @@ body.dialog-open { overflow:hidden; }
 @media (max-width:639px) {
   #inicio.hero-full .hero-image > img { object-position:var(--hero-photo-mobile-position,28% 50%); }
 }
+
+/* Recorridos de propiedades: controles nativos y selección junto a las fotos. */
+#gallery-video { width:100%; height:100%; object-fit:contain; background:var(--ink); }
+.gallery-stage > [hidden] { display:none; }
+.gallery-thumbnails button { position:relative; }
+.property-video-badge { position:absolute; inset:0; display:grid; place-items:center; color:#fff; font-size:22px; background:rgb(0 0 0 / 20%); text-shadow:0 1px 4px rgb(0 0 0 / 65%); }

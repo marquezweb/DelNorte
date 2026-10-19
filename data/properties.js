@@ -68,11 +68,14 @@
       { label: 'Acceso a la cochera', indexes: [1] }
     ],
     Dd9vtifGp4z: [
-      { label: 'Fachada', indexes: [0] },
-      { label: 'Ambiente principal', indexes: [1, 5] },
-      { label: 'Cocina', indexes: [2] },
-      { label: 'Dormitorios y placares', indexes: [4, 6, 7] },
-      { label: 'Baño', indexes: [3, 8] }
+      { label: 'Fachada', indexes: [11] },
+      { label: 'Ambientes principales', indexes: [1, 7] },
+      { label: 'Cocina', indexes: [0] },
+      { label: 'Dormitorios y placares', indexes: [2, 4, 5, 8] },
+      { label: 'Circulación', indexes: [6] },
+      { label: 'Baño', indexes: [9] },
+      { label: 'Lavadero', indexes: [3] },
+      { label: 'Vista exterior', indexes: [10] }
     ],
     DdXRi7gGlfa: [
       { label: 'Fachada', indexes: [0] },
@@ -165,7 +168,8 @@
       extraCosts: ['Proporción de impuestos municipales', 'Luz', 'Gas'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del dúplex en alquiler en Pellegrini al 900, Barrio Mutual',
-      photos: propertyPhotos('duplex-pellegrini-900-barrio-mutual', 17, { cleanFirst: true })
+      photos: propertyPhotos('duplex-pellegrini-900-barrio-mutual', 17, { cleanFirst: true }),
+      videos: [{ src: 'videos/propiedades/pellegrini-900-recorrido.mp4', poster: 'assets/properties/duplex-pellegrini-900-barrio-mutual/recorrido-poster.webp', label: 'Recorrido del dúplex' }]
     },
     {
       id: 'DeIXru5mncY', publishedAt: '2026-10-05', title: 'Dúplex sobre calle Entre Ríos',
@@ -215,21 +219,21 @@
       photos: propertyPhotos('cochera-edificio-turek', 2, { cleanFirst: true })
     },
     {
-      id: 'Dd9vtifGp4z', publishedAt: '2026-10-01', title: 'Departamento en Finocchio al 1500',
+      id: 'Dd9vtifGp4z', publishedAt: '2026-10-19', source: 'https://www.instagram.com/p/Der1zHaGnFw/', title: 'Departamento en Finocchio al 1500',
       operation: 'alquiler', type: 'departamentos', city: 'rio-grande', neighborhood: 'Zona Centro',
       address: 'Finocchio al 1500', bedrooms: 2, bathrooms: 1,
       area: null, areaLabel: '', price: 530000, currency: 'ARS', priceNote: '+ impuestos',
       availabilityStatus: 'confirmed', publicListing: true,
       occupancy: '',
       summary: 'Departamento en planta baja con dos dormitorios, cocina, lavadero y living-comedor.',
-      features: ['Dos dormitorios con placard: uno amplio y otro pequeño', 'Baño completo con bañera y mampara', 'Cocina', 'Lavadero', 'Living-comedor', 'Ubicado en planta baja'],
+      features: ['Dos dormitorios con placard: uno amplio y otro pequeño', 'Baño completo con bañera y mampara', 'Cocina', 'Lavadero', 'Living-comedor', 'Ubicado en planta baja', 'Amplios espacios de guardado'],
       conditions: 'Contrato por dos años, con ajuste cada seis meses por índice IPC. Precio más impuestos.',
       rentalFormat: true,
       contractConditions: ['Duración: 2 años.', 'Ajustes: cada 6 meses mediante el índice IPC.'],
       extraCosts: ['Impuestos'],
-      whatsapp: '5492964617729', cardPhotoIndex: 0,
+      whatsapp: '5492964617729', cardPhotoIndex: 11,
       cardPhotoAlt: 'Frente del edificio en Finocchio al 1500, Zona Centro',
-      photos: propertyPhotos('departamento-finochietto-1500', 9, { cleanFirst: true })
+      photos: [...propertyPhotos('departamento-finocchio-1500', 12).slice(1), 'imagenes/propiedades/departamento-finocchio-1500/departamento-finocchio-1500-13-principal.jpg']
     },
     {
       id: 'DeH7lENGoxL', publishedAt: '2026-10-05', title: 'Publicación en revisión',
@@ -264,7 +268,8 @@
       extraCosts: ['Expensas', 'Luz', 'Gas', 'Seguro contra incendio'],
       whatsapp: '5492964617729', cardPhotoIndex: 0,
       cardPhotoAlt: 'Frente del edificio en Belgrano y San Martín',
-      photos: propertyPhotos('departamento-belgrano-san-martin', 8, { cleanFirst: true })
+      photos: propertyPhotos('departamento-belgrano-san-martin', 8, { cleanFirst: true }),
+      videos: [{ src: 'videos/propiedades/belgrano-san-martin-recorrido.mp4', poster: 'assets/properties/departamento-belgrano-san-martin/recorrido-poster.webp', label: 'Recorrido del departamento' }]
     },
     {
       id: 'DczHePGmjeT', publishedAt: '2026-09-02', title: 'Departamentos en Barrio Buenavista',
@@ -284,7 +289,7 @@
       cardPhotoAlt: 'Frente del edificio de departamentos en Gálvez al 500, Barrio Buenavista',
       photos: propertyPhotos('departamentos-barrio-buenavista', 8, { cleanFirst: true })
     }
-  ].map(property => ({ ...property, source: sourceFor(property.id), galleryGroups: galleryGroups[property.id] || [] }));
+  ].map(property => ({ ...property, source: property.source || sourceFor(property.id), galleryGroups: galleryGroups[property.id] || [] }));
 
   const formatPrice = property => {
     if (property.price == null) return 'Consultar precio';

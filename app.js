@@ -123,15 +123,34 @@
   const dialog = document.querySelector('#property-dialog');
   let selectedProperty;
   let photoIndex = 0;
+  let galleryMedia = [];
   let previousFocus;
 
-  function updateGallery() {
+  function updateGallery(autoplay = false) {
     if (!selectedProperty) return;
+    const entry = galleryMedia[photoIndex];
     const image = document.querySelector('#gallery-image');
-    image.src = selectedProperty.photos[photoIndex];
-    const label = selectedProperty.photoLabels?.[photoIndex];
-    image.alt = `${selectedProperty.title}${label ? ` · ${label}` : ''} · fotografía ${photoIndex + 1} de ${selectedProperty.photos.length}`;
-    document.querySelector('#gallery-count').textContent = `Foto ${photoIndex + 1} de ${selectedProperty.photos.length}${label ? ` · ${label}` : ''}`;
+    const video = document.querySelector('#gallery-video');
+    const isVideo = entry.type === 'video';
+    video.pause();
+    image.hidden = isVideo;
+    video.hidden = !isVideo;
+    if (isVideo) {
+      if (video.getAttribute('src') !== entry.src) {
+        video.src = entry.src;
+        video.poster = entry.poster;
+      }
+      video.setAttribute('aria-label', `${selectedProperty.title} · ${entry.label}`);
+      video.muted = true;
+      if (autoplay) {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      }
+    } else {
+      image.src = entry.src;
+      image.alt = `${selectedProperty.title}${entry.label ? ` · ${entry.label}` : ''} · fotografía ${photoIndex + 1} de ${galleryMedia.length}`;
+    }
+    document.querySelector('#gallery-count').textContent = `${isVideo ? 'Video' : 'Foto'} ${photoIndex + 1} de ${galleryMedia.length}${entry.label ? ` · ${entry.label}` : ''}`;
     document.querySelectorAll('[data-photo]').forEach(button => button.setAttribute('aria-current', String(Number(button.dataset.photo) === photoIndex)));
   }
 
@@ -144,6 +163,10 @@
       const entries = original.galleryGroups.flatMap(group => group.indexes.map(index => ({ src: original.photos[index], label: group.label })));
       selectedProperty = { ...original, photos: entries.map(entry => entry.src), photoLabels: entries.map(entry => entry.label) };
     }
+    galleryMedia = [
+      ...selectedProperty.photos.map((src, index) => ({ type: 'image', src, label: selectedProperty.photoLabels?.[index] || '' })),
+      ...(selectedProperty.videos || []).map(video => ({ ...video, type: 'video' }))
+    ];
     photoIndex = 0; previousFocus = document.activeElement;
     const property = selectedProperty;
     const facts = [
@@ -174,7 +197,7 @@
       <p class="detail-summary">${escapeHTML(property.summary)}</p>${features}
       ${rentalTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
       <a class="detail-contact" href="https://wa.me/${property.whatsapp}?text=${encodeURIComponent(inquiry)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ${icon('arrow_forward')}</a>`;
-    document.querySelector('#gallery-thumbnails').innerHTML = property.photos.map((src, index) => `<button type="button" data-photo="${index}" aria-label="Ver foto ${index + 1}" aria-current="${index === photoIndex}"><img src="${escapeHTML(imageVariant(src, 160))}" alt="" loading="lazy" width="64" height="64"></button>`).join('');
+    document.querySelector('#gallery-thumbnails').innerHTML = galleryMedia.map((entry, index) => `<button type="button" data-photo="${index}" aria-label="${escapeHTML(entry.type === 'video' ? `Ver video: ${entry.label}` : `Ver foto ${index + 1}`)}" aria-current="${index === photoIndex}"><img src="${escapeHTML(entry.type === 'video' ? entry.poster : imageVariant(entry.src, 160))}" alt="" loading="lazy" width="64" height="64">${entry.type === 'video' ? '<span class="property-video-badge" aria-hidden="true">▶</span>' : ''}</button>`).join('');
     updateGallery();
     document.body.classList.add('dialog-open');
     dialog.showModal();
@@ -189,20 +212,28 @@
         if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
       }
       const thumbnail = event.target.closest('[data-photo]');
-      if (thumbnail) { photoIndex = Number(thumbnail.dataset.photo); updateGallery(); }
+      if (thumbnail) { photoIndex = Number(thumbnail.dataset.photo); updateGallery(true); }
     });
     const movePhoto = direction => {
       if (!selectedProperty) return;
-      photoIndex = (photoIndex + direction + selectedProperty.photos.length) % selectedProperty.photos.length;
-      updateGallery();
+      photoIndex = (photoIndex + direction + galleryMedia.length) % galleryMedia.length;
+      updateGallery(true);
     };
     document.querySelector('#gallery-prev')?.addEventListener('click', () => movePhoto(-1));
     document.querySelector('#gallery-next')?.addEventListener('click', () => movePhoto(1));
     dialog.addEventListener('keydown', event => {
+      if (event.target.closest('video')) return;
       if (event.key === 'ArrowLeft') { event.preventDefault(); movePhoto(-1); }
       if (event.key === 'ArrowRight') { event.preventDefault(); movePhoto(1); }
     });
-    dialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); previousFocus?.focus(); });
+    dialog.addEventListener('close', () => {
+      const video = document.querySelector('#gallery-video');
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      document.body.classList.remove('dialog-open');
+      previousFocus?.focus();
+    });
   }
 
   renderFeatured();
