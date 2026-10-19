@@ -112,7 +112,7 @@ globalThis.DelNorteDevelopments = [
     source: 'https://www.instagram.com/p/DcMiHEUml8T/', verification: null
   },
   {
-    id: 'gobernador-campos-309', category: 'pozo', name: 'Gobernador Campos 309',
+    id: 'gobernador-campos-309', category: 'pozo', name: 'Gobernador Campos 309', displayOrder: 0,
     cardSummary: 'Monoambientes desde 30,65 m² · Aptos turismo',
     city: 'Ushuaia', description: 'Lanzamiento en pozo a tres cuadras de Av. San Martín, con vistas hacia la Bahía de Ushuaia y las montañas.',
     address: 'Gobernador Campos 309, esquina Godoy',

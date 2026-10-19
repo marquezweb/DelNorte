@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T20:37:01.528Z",
-  "totalBytes": 92611254,
+  "generatedAt": "2026-10-19T22:08:56.499Z",
+  "totalBytes": 92611324,
   "files": [
     {
       "path": ".gitignore",
@@ -464,7 +464,7 @@
     },
     {
       "path": "data/developments.js",
-      "bytes": 11607
+      "bytes": 11624
     },
     {
       "path": "data/featured.js",
@@ -480,7 +480,7 @@
     },
     {
       "path": "developments.js",
-      "bytes": 14833
+      "bytes": 14886
     },
     {
       "path": "imagenes/desarrollos/gobernador-campos-309/gobernador-campos-309-01.jpg",

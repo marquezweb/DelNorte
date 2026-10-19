@@ -4,7 +4,7 @@
   const records = globalThis.DelNorteDevelopments || [];
   const params = new URLSearchParams(location.search);
   const category = params.get('categoria') === 'pozo' ? 'pozo' : 'terrenos';
-  const current = records.filter(record => record.category === category).sort((a, b) => Number(Boolean(b.photos?.length)) - Number(Boolean(a.photos?.length)));
+  const current = records.filter(record => record.category === category).sort((a, b) => (a.displayOrder ?? 100) - (b.displayOrder ?? 100) || Number(Boolean(b.photos?.length)) - Number(Boolean(a.photos?.length)));
   const selected = params.get('id');
   const isLand = category === 'terrenos';
   const title = isLand ? 'Terrenos y loteos' : 'Edificios en pozo';
