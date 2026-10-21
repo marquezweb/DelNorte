@@ -97,6 +97,30 @@
 
   const properties = [
     {
+      id: 'quincho-el-murtillar', publishedAt: '2026-10-21', title: 'Quincho amoblado en El Murtillar',
+      operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'El Murtillar',
+      address: 'Barrio El Murtillar', bedrooms: null, bathrooms: 1,
+      area: 80, areaLabel: '80 m² cubiertos', lotArea: 1000, price: 90000, currency: 'USD',
+      availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: '',
+      summary: 'Quincho monoambiente amoblado de 80 m², sobre un terreno de 1.000 m² en El Murtillar, Río Grande. Cuenta con cocina-comedor, living con hogar, parrilla y vista al mar.',
+      features: ['Quincho monoambiente de 80 m²', 'Terreno de 1.000 m²', 'Cocina-comedor', 'Baño completo', 'Living con hogar', 'Parrilla', 'Amoblado', 'Vista al mar'],
+      cadastralDetails: [['Macizo', '4'], ['Parcela', '8'], ['Sección', 'X'], ['Plano', 'T.F. 2-58-10'], ['Partida', '24713']],
+      saleConditions: ['Se escuchan ofertas.', 'No apto para crédito hipotecario.'],
+      conditions: '',
+      source: 'Ficha proporcionada por Del Norte Propiedades.',
+      whatsapp: '5492964610103', cardPhotoIndex: 0, heroPhotoIndex: 0,
+      cardPhotoAlt: 'Vista exterior del quincho en El Murtillar, con el mar de fondo',
+      photos: propertyPhotos('quincho-el-murtillar', 17),
+      galleryGroups: [
+        { label: 'Fachada y entorno', indexes: [0, 1] },
+        { label: 'Living con hogar', indexes: [14, 15, 16] },
+        { label: 'Cocina y parrilla', indexes: [12, 13] },
+        { label: 'Comedor y vista al mar', indexes: [2, 3, 4, 5, 6, 7, 8, 9, 10] },
+        { label: 'Baño completo', indexes: [11] }
+      ]
+    },
+    {
       id: 'indira-gandhi-833', publishedAt: '2026-10-19', title: 'Dúplex en Indira Gandhi 833',
       operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio CGT',
       address: 'Indira Gandhi N° 833, Barrio CGT', bedrooms: 2, bathrooms: 1, toilets: 1,
@@ -181,8 +205,8 @@
     {
       id: 'DdMt6xHmiKp', publishedAt: '2026-09-12', title: 'Dúplex en Pellegrini al 900',
       operation: 'alquiler', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
-      address: 'Pellegrini al 900, Barrio Mutual', bedrooms: 2, bathrooms: 1, toilets: 1,
-      area: null, areaLabel: '', price: 1050000, currency: 'ARS',
+      address: 'Pellegrini N° 936, Barrio Mutual', bedrooms: 2, bathrooms: 1, toilets: 1,
+      area: null, areaLabel: '', price: 950000, currency: 'ARS',
       rentalFormat: true,
       availabilityStatus: 'confirmed', publicListing: true,
       occupancy: '',
@@ -212,14 +236,14 @@
     {
       id: 'DeIJre_muqb', publishedAt: '2026-10-05', title: 'Casa en Barrio Las Barrancas',
       operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'Las Barrancas',
-      address: 'Barrio Las Barrancas', bedrooms: 3, bathrooms: 2,
+      address: 'Rakela 154, Barrio Las Barrancas', bedrooms: 3, bathrooms: 2,
       area: 130, areaLabel: '130 m² construidos', lotArea: 237, price: 170000, currency: 'USD',
       availabilityStatus: 'confirmed', publicListing: true,
-      occupancy: 'Actualmente alquilada.',
+      occupancy: 'Alquilada hasta el 31/07/2028.',
       showOccupancyOnCard: true,
       summary: 'Casa amplia, luminosa y funcional de dos plantas, en un entorno residencial de Barrio Las Barrancas. Se ofrece en venta actualmente alquilada, una alternativa para inversión.',
       features: ['130 m² construidos sobre un lote de 237 m²', 'Tres dormitorios', 'Dos baños, uno con ducha', 'Living-comedor amplio y luminoso', 'Cocina y lavadero', 'Depósito bajo escalera', 'Patio amplio con posibilidad de ampliación', 'Excelente iluminación natural', 'Portón y entrada para vehículo', 'Calefacción por caldera y radiadores', 'Aberturas de PVC', 'Apta crédito hipotecario'],
-      conditions: 'Alquilada y genera renta. Precio: USD 170.000.',
+      conditions: '',
       whatsapp: '5492964610103', cardPhotoIndex: 0,
       cardPhotoAlt: 'Fachada de la casa en venta en Barrio Las Barrancas',
       photos: propertyPhotos('casa-barrio-las-barrancas', 16, { cleanFirst: true })
@@ -228,7 +252,7 @@
       id: 'Dd9xBY2GjP0', publishedAt: '2026-10-01', title: 'Cochera en Edificio Turek',
       operation: 'alquiler', type: 'cocheras', city: 'rio-grande', neighborhood: '',
       address: 'Edificio Turek · Gálvez 547', bedrooms: null, bathrooms: null,
-      area: null, areaLabel: '', price: 100000, currency: 'ARS', priceNote: 'expensas e impuestos incluidos',
+      area: null, areaLabel: '', price: 90000, currency: 'ARS', priceNote: 'expensas e impuestos incluidos',
       availabilityStatus: 'confirmed', publicListing: true,
       occupancy: '',
       summary: 'Cochera totalmente cubierta en el subsuelo del Edificio Turek, con portón eléctrico y mando a distancia.',

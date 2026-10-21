@@ -11,13 +11,12 @@ globalThis.DelNorteDevelopments = [
       { title: 'Equipamiento', indexes: [6, 8, 9] }
     ],
     delivery: 'Marzo de 2027',
-    financing: ['Reserva con el 5% del valor de la unidad', 'Al firmar el Boleto de Compraventa se completa el 40% del valor', 'Saldo del 60% en 30 cuotas en pesos ajustadas por el Índice de la Cámara de la Construcción, con 3 refuerzos en dólares'],
+    financing: ['Boleto de compraventa: 40% del valor de la unidad', '2 refuerzos de USD 10.000 en las cuotas 12 y 18', 'Saldo en 24 cuotas en pesos ajustadas por índice CAC'],
     financingSteps: [
-      { title: 'Reserva', value: '5%', description: 'Del valor de la unidad.' },
-      { title: 'Boleto de compraventa', value: '40%', description: 'Completás el 40% del valor, incluyendo la reserva.' },
-      { title: 'Saldo', value: '60%', description: 'En 30 cuotas en pesos.' }
+      { title: 'Boleto de compraventa', value: '40%', description: 'Del valor de la unidad al boleto.' },
+      { title: '2 refuerzos', value: 'USD 10.000', description: 'Cada uno, en las cuotas 12 y 18.' },
+      { title: 'Saldo', value: '24 cuotas', description: 'En pesos ajustadas por índice CAC.' }
     ],
-    financingNotes: ['Cuotas ajustadas por el Índice de la Cámara de la Construcción.', 'El plan incluye 3 refuerzos en dólares.'],
     image: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-01.jpg',
     imageAlt: 'Render de la fachada del proyecto Deloqui 1548 en Ushuaia',
     photos: [

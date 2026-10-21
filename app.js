@@ -187,6 +187,8 @@
         ${(property.costNotes || []).map(note => `<p>${escapeHTML(note)}</p>`).join('')}
       </section>` : '';
     const tenancyTerms = property.tenancyDetails?.length ? `<section class="detail-rental-section" aria-label="Alquiler vigente"><h3>Alquiler vigente</h3><ul>${property.tenancyDetails.map(detail => `<li>${escapeHTML(detail)}</li>`).join('')}</ul></section>` : '';
+    const saleTerms = property.saleConditions?.length ? `<section class="detail-rental-section" aria-label="Condiciones de venta"><h3>Condiciones de venta</h3><ul>${property.saleConditions.map(condition => `<li>${escapeHTML(condition)}</li>`).join('')}</ul></section>` : '';
+    const cadastralDetails = property.cadastralDetails?.length ? `<section class="detail-rental-section" aria-label="Nomenclatura catastral"><h3>Nomenclatura catastral</h3><dl class="detail-cadastral">${property.cadastralDetails.map(([label, value]) => `<div><dt>${escapeHTML(label)}</dt><dd>${escapeHTML(value)}</dd></div>`).join('')}</dl></section>` : '';
     const inquiry = `Hola, me interesa ${property.title}. ¿Me comparten más información? ${property.source}`;
     document.querySelector('#detail-content').innerHTML = `
       <span class="detail-eyebrow"><span class="brand-dot"></span>${property.operation === 'alquiler' ? 'Alquiler' : 'Venta'}</span>
@@ -196,7 +198,8 @@
       ${property.occupancy ? `<p class="detail-occupancy${property.showOccupancyOnCard ? ' occupancy-badge' : ''}"><span>${escapeHTML(property.occupancy)}</span></p>` : ''}
       ${facts ? `<div class="detail-facts">${facts}</div>` : ''}
       <p class="detail-summary">${escapeHTML(property.summary)}</p>${features}
-      ${rentalTerms || tenancyTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
+      ${cadastralDetails}
+      ${rentalTerms || tenancyTerms || saleTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
       <a class="detail-contact" href="https://wa.me/${property.whatsapp}?text=${encodeURIComponent(inquiry)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ${icon('arrow_forward')}</a>`;
     document.querySelector('#gallery-thumbnails').innerHTML = galleryMedia.map((entry, index) => `<button type="button" data-photo="${index}" aria-label="${escapeHTML(entry.type === 'video' ? `Ver video: ${entry.label}` : `Ver foto ${index + 1}`)}" aria-current="${index === photoIndex}"><img src="${escapeHTML(entry.type === 'video' ? entry.poster : imageVariant(entry.src, 160))}" alt="" loading="lazy" width="64" height="64">${entry.type === 'video' ? '<span class="property-video-badge" aria-hidden="true">▶</span>' : ''}</button>`).join('');
     updateGallery();

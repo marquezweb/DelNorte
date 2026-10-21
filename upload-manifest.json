@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T00:18:32.313Z",
-  "totalBytes": 92611695,
+  "generatedAt": "2026-10-21T20:37:42.080Z",
+  "totalBytes": 97629154,
   "files": [
     {
       "path": ".gitignore",
@@ -12,7 +12,7 @@
     },
     {
       "path": "app.js",
-      "bytes": 15909
+      "bytes": 16581
     },
     {
       "path": "assets/logo.jpg",
@@ -464,7 +464,7 @@
     },
     {
       "path": "data/developments.js",
-      "bytes": 11624
+      "bytes": 11433
     },
     {
       "path": "data/featured.js",
@@ -472,7 +472,7 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 24023
+      "bytes": 25668
     },
     {
       "path": "desarrollos.html",
@@ -892,7 +892,7 @@
     },
     {
       "path": "styles.css",
-      "bytes": 121975
+      "bytes": 122350
     },
     {
       "path": "imagenes/desarrollos/altos-de-la-estancia/altos-de-la-estancia-01.jpg",
@@ -1761,6 +1761,278 @@
     {
       "path": "assets/properties/duplex-indira-gandhi-833/duplex-indira-gandhi-833-11-1280.webp",
       "bytes": 58564
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-01.jpg",
+      "bytes": 255579
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-01-160.webp",
+      "bytes": 3788
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-01-640.webp",
+      "bytes": 45788
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-01-1280.webp",
+      "bytes": 137444
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-02.jpg",
+      "bytes": 287241
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-02-160.webp",
+      "bytes": 4202
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-02-640.webp",
+      "bytes": 48112
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-02-1280.webp",
+      "bytes": 151482
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-03.jpg",
+      "bytes": 146331
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-03-160.webp",
+      "bytes": 4476
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-03-640.webp",
+      "bytes": 35232
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-03-1280.webp",
+      "bytes": 93476
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-04.jpg",
+      "bytes": 125133
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-04-160.webp",
+      "bytes": 4454
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-04-640.webp",
+      "bytes": 31782
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-04-1280.webp",
+      "bytes": 75930
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-05.jpg",
+      "bytes": 135646
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-05-160.webp",
+      "bytes": 4208
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-05-640.webp",
+      "bytes": 32956
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-05-1280.webp",
+      "bytes": 84564
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-06.jpg",
+      "bytes": 145914
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-06-160.webp",
+      "bytes": 4472
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-06-640.webp",
+      "bytes": 35948
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-06-1280.webp",
+      "bytes": 93684
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-07.jpg",
+      "bytes": 184156
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-07-160.webp",
+      "bytes": 5604
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-07-640.webp",
+      "bytes": 46182
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-07-1280.webp",
+      "bytes": 127678
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-08.jpg",
+      "bytes": 141065
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-08-160.webp",
+      "bytes": 4314
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-08-640.webp",
+      "bytes": 34594
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-08-1280.webp",
+      "bytes": 88444
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-09.jpg",
+      "bytes": 124738
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-09-160.webp",
+      "bytes": 4758
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-09-640.webp",
+      "bytes": 30978
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-09-1280.webp",
+      "bytes": 70262
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-10.jpg",
+      "bytes": 155085
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-10-160.webp",
+      "bytes": 5350
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-10-640.webp",
+      "bytes": 43292
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-10-1280.webp",
+      "bytes": 97656
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-11.jpg",
+      "bytes": 125121
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-11-160.webp",
+      "bytes": 3234
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-11-640.webp",
+      "bytes": 26754
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-11-1280.webp",
+      "bytes": 78014
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-12.jpg",
+      "bytes": 99490
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-12-160.webp",
+      "bytes": 4814
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-12-640.webp",
+      "bytes": 34472
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-12-1280.webp",
+      "bytes": 56926
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-13.jpg",
+      "bytes": 113159
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-13-160.webp",
+      "bytes": 3692
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-13-640.webp",
+      "bytes": 27442
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-13-1280.webp",
+      "bytes": 67046
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-14.jpg",
+      "bytes": 115758
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-14-160.webp",
+      "bytes": 3572
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-14-640.webp",
+      "bytes": 26816
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-14-1280.webp",
+      "bytes": 68914
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-15.jpg",
+      "bytes": 199928
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-15-160.webp",
+      "bytes": 5352
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-15-640.webp",
+      "bytes": 53494
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-15-1280.webp",
+      "bytes": 144442
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-16.jpg",
+      "bytes": 154269
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-16-160.webp",
+      "bytes": 4290
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-16-640.webp",
+      "bytes": 39090
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-16-1280.webp",
+      "bytes": 102994
+    },
+    {
+      "path": "imagenes/propiedades/quincho-el-murtillar/quincho-el-murtillar-17.jpg",
+      "bytes": 144139
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-17-160.webp",
+      "bytes": 6894
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-17-640.webp",
+      "bytes": 55656
+    },
+    {
+      "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-17-1280.webp",
+      "bytes": 97188
     }
   ]
 }
