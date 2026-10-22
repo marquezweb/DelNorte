@@ -97,6 +97,55 @@
 
   const properties = [
     {
+      id: 'pellegrini-940', publishedAt: '2026-10-22', title: 'Dúplex en Pellegrini 940',
+      operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Barrio Mutual',
+      address: 'Pellegrini N° 940', bedrooms: 3, bathrooms: 1, toilets: 1,
+      area: 125.4, areaLabel: '125,40 m² construidos', uncoveredArea: 62.75, lotArea: 135.43,
+      price: 160000, currency: 'USD', availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: 'Alquilado hasta el 03/01/2027.', showOccupancyOnCard: true,
+      summary: 'Dúplex de tres dormitorios en Barrio Mutual, Río Grande, con 125,40 m² construidos sobre un terreno de 135,43 m². Cuenta con living, cocina-comedor, quincho con parrilla, lavadero, patio y entrada para vehículo. Apto para crédito hipotecario.',
+      features: ['Tres dormitorios', 'Baño completo', 'Toilette', 'Living', 'Cocina-comedor', 'Quincho con parrilla', 'Lavadero', 'Entrada para vehículo', 'Patio', '125,40 m² construidos', '62,75 m² libres', 'Terreno de 135,43 m²', 'Apto para crédito hipotecario'],
+      tenancyDetails: ['Contrato de alquiler vigente hasta el 03/01/2027.', 'Valor mensual del alquiler: $1.238.800.'],
+      saleConditions: ['Los gastos se abonan aparte del precio de venta.'], conditions: '',
+      source: 'Ficha proporcionada por Del Norte Propiedades.', whatsapp: '5492964610103',
+      cardPhotoIndex: 0, heroPhotoIndex: 0, cardPhotoAlt: 'Frente del complejo de dúplex en Pellegrini 940, Barrio Mutual',
+      photos: propertyPhotos('duplex-pellegrini-940', 21),
+      galleryGroups: [
+        { label: 'Frente y acceso para vehículo', indexes: [0, 1, 2] },
+        { label: 'Living y comedor', indexes: [3, 4, 5] },
+        { label: 'Cocina', indexes: [6, 7] },
+        { label: 'Quincho con parrilla', indexes: [8] },
+        { label: 'Lavadero', indexes: [9] },
+        { label: 'Patio', indexes: [10] },
+        { label: 'Escalera y circulación', indexes: [11, 12, 20] },
+        { label: 'Dormitorios y placares', indexes: [13, 14, 15, 16] },
+        { label: 'Baño completo', indexes: [17, 18] },
+        { label: 'Toilette', indexes: [19] }
+      ]
+    },
+    {
+      id: 'islas-malvinas-944-duplex-8', publishedAt: '2026-10-22', title: 'Dúplex 8 en Islas Malvinas 944',
+      operation: 'venta', type: 'duplex', city: 'rio-grande', neighborhood: 'Zona Centro',
+      address: 'Islas Malvinas N° 944, dúplex 8', bedrooms: 3, bathrooms: 1, toilets: 1,
+      area: 97.88, areaLabel: '97,88 m² cubiertos', uncoveredArea: 59.67, price: 99000, currency: 'USD',
+      availabilityStatus: 'confirmed', publicListing: true, occupancy: '',
+      summary: 'Dúplex recientemente remodelado en Zona Centro, Río Grande, con tres dormitorios, 97,88 m² cubiertos y 59,67 m² descubiertos. Cuenta con cocina con parrilla, living-comedor, patio y entrada para vehículo.',
+      features: ['Tres dormitorios', 'Baño completo en planta alta', 'Toilette en planta baja', 'Cocina con parrilla', 'Living-comedor', 'Patio', 'Lavadero', 'Entrada para vehículo', 'Recientemente remodelado', '97,88 m² cubiertos y 59,67 m² descubiertos'],
+      saleConditions: ['Los gastos se abonan aparte del precio de venta.'], conditions: '',
+      source: 'Ficha proporcionada por Del Norte Propiedades.', whatsapp: '5492964610103',
+      cardPhotoIndex: 0, heroPhotoIndex: 0,
+      cardPhotoAlt: 'Cocina con parrilla del dúplex 8 en Islas Malvinas 944',
+      photos: propertyPhotos('duplex-islas-malvinas-944-8', 12),
+      galleryGroups: [
+        { label: 'Cocina y parrilla', indexes: [0, 1, 2] },
+        { label: 'Living-comedor en planta baja', indexes: [3, 4] },
+        { label: 'Escalera y circulación', indexes: [5, 6] },
+        { label: 'Dormitorios en planta alta', indexes: [7, 8, 9] },
+        { label: 'Baño en planta alta', indexes: [10] },
+        { label: 'Toilette en planta baja', indexes: [11] }
+      ]
+    },
+    {
       id: 'vidal-herrera-agp', publishedAt: '2026-10-22', title: 'Casa a remodelar + departamento',
       operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'Barrio AGP',
       address: 'Vidal N° 710-756, esquina Herrera', bedrooms: 5, bathrooms: 2, toilets: 1,
@@ -105,7 +154,7 @@
       occupancy: 'Casa desocupada · Departamento alquilado hasta el 31/12/2027.', showOccupancyOnCard: true,
       summary: 'Casa a remodelar más departamento en esquina, en Barrio AGP, Río Grande. La casa presenta filtraciones y requiere inversión en refacciones. El conjunto suma 169 m² construidos sobre un terreno de 260 m².',
       features: ['Casa: cuatro dormitorios', 'Casa: baño completo y toilette', 'Casa: cocina-comedor amplio y living', 'Casa: quincho/garage con parrilla y lavadero', 'Casa: patio con reja', 'Departamento: un dormitorio y baño', 'Departamento: cocina-living-comedor', '169 m² construidos en total', 'Terreno de 260 m²'],
-      tenancyDetails: ['Departamento alquilado hasta el 31/12/2027.', 'Alquiler informado en la ficha: $412.600 mensuales.', 'Casa desocupada.'],
+      tenancyDetails: ['Departamento alquilado hasta el 31/12/2027.', 'Valor mensual del alquiler: $412.600.', 'Casa desocupada.'],
       saleConditions: ['La casa presenta filtraciones y requiere remodelación.', 'Precio más gastos de comisión inmobiliaria y escritura.'],
       conditions: '', source: 'Ficha proporcionada por Del Norte Propiedades.',
       whatsapp: '5492964610103', cardPhotoIndex: 0, heroPhotoIndex: 0,
@@ -202,9 +251,9 @@
       photos: propertyPhotos('duplex-ushuaia-700-barrio-mutual', 14, { cleanFirst: true })
     },
     {
-      id: 'DYAMViQgJsY', publishedAt: '2026-05-06', title: 'Casa en Barrio Aeropuerto',
+      id: 'DYAMViQgJsY', publishedAt: '2026-05-06', title: 'Casa en Los Canelos 1267',
       operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'Barrio Aeropuerto',
-      address: 'Barrio Aeropuerto, Río Grande', bedrooms: 3, bathrooms: 2,
+      address: 'Los Canelos N° 1267, Barrio Aeropuerto', bedrooms: 3, bathrooms: 2,
       area: 110, areaLabel: '110 m² construidos', lotArea: 200, price: 93000, currency: 'USD',
       availabilityStatus: 'confirmed', publicListing: true,
       occupancy: 'Precio rebajado de US$ 110.000 a US$ 93.000.',
@@ -214,7 +263,8 @@
       whatsapp: '5492964610103', cardPhotoIndex: 0, heroPhotoIndex: 0,
       cardPhotoAlt: 'Fachada de madera de la casa en Barrio Aeropuerto',
       heroPhotoAlt: 'Fachada de madera de la casa en Barrio Aeropuerto',
-      photos: propertyPhotos('casa-barrio-aeropuerto', 10)
+      photos: propertyPhotos('casa-barrio-aeropuerto', 10),
+      videos: [{ src: 'videos/propiedades/los-canelos-1267-recorrido.mp4', poster: 'assets/properties/casa-barrio-aeropuerto/recorrido-poster.webp', label: 'Recorrido de la casa en Los Canelos 1267' }]
     },
     {
       id: 'DeaME7gGqCx', publishedAt: '2026-10-12', title: 'Dúplex en Barrio Mutual',

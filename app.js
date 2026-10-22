@@ -170,7 +170,7 @@
     photoIndex = 0; previousFocus = document.activeElement;
     const property = selectedProperty;
     const facts = [
-      property.area != null ? `<div><strong>${property.area} m²</strong><span>${escapeHTML(property.areaLabel.replace(/^[\d.,]+ m²\s*/, '') || 'superficie')}</span></div>` : '',
+      property.area != null ? `<div><strong>${new Intl.NumberFormat('es-AR').format(property.area)} m²</strong><span>${escapeHTML(property.areaLabel.replace(/^[\d.,]+ m²\s*/, '') || 'superficie')}</span></div>` : '',
       property.bedrooms ? `<div><strong>${icon('bed')}${property.bedrooms}</strong><span>${property.bedrooms === 1 ? 'Dormitorio' : 'Dormitorios'}</span></div>` : '',
       property.bathrooms ? `<div><strong>${icon('toilet')}${property.bathrooms}${property.toilets ? ' + 1' : ''}</strong><span>${property.toilets ? 'Baño + toilette' : property.bathrooms === 1 ? 'Baño' : 'Baños'}</span></div>` : ''
     ].filter(Boolean).join('');

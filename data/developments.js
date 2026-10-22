@@ -17,18 +17,23 @@ globalThis.DelNorteDevelopments = [
       { title: '2 refuerzos', value: 'USD 10.000', description: 'Cada uno, en las cuotas 12 y 18.' },
       { title: 'Saldo', value: '24 cuotas', description: 'En pesos ajustadas por índice CAC.' }
     ],
-    image: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-01.jpg',
-    imageAlt: 'Render de la fachada del proyecto Deloqui 1548 en Ushuaia',
+    image: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-render-frente.jpg',
+    imageAlt: 'Render actualizado de la fachada de Deloqui 1548 en Ushuaia',
     photos: [
-      { label: 'Render del proyecto · Fachada', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-01.jpg' },
+      { label: 'Render del proyecto · Fachada hacia la calle', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-render-frente.jpg' },
+      { label: 'Render del proyecto · Contrafrente', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-render-contrafrente.jpg' },
+      { label: 'Obra · Vista exterior con niveles señalados', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-obra-exterior.jpg' },
+      { label: 'Obra · Estructura y vista hacia el canal', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-obra-estructura.jpg' },
+      { label: 'Interior de unidad · Cocina', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-cocina.jpg' },
+      { label: 'Interior de unidad · Ambiente principal con vista al canal', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-ambiente.jpg' },
+      { label: 'Interior de unidad · Balcón y vista al canal', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-balcon.jpg' },
+      { label: 'Interior de unidad · Baño', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-20261022-bano.jpg' },
       { label: 'Obra · Fachada en noviembre de 2025', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-02.jpg' },
-      { label: 'Obra · Interior en noviembre de 2025', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-07.jpg' },
-      { label: 'Vista al Canal de Beagle desde una unidad', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-03.jpg' },
-      { label: 'Vista panorámica hacia el canal', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-04.jpg' },
+      { label: 'Obra · Interior e instalaciones en noviembre de 2025', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-07.jpg' },
       { label: 'Vista de la ciudad y las montañas', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-05.jpg' },
-      { label: 'Vista hacia la calle Deloqui y la montaña', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-06.jpg' },
       { label: 'Ubicación señalada de Deloqui 1548', src: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-08.jpg' }
     ],
+    videos: [{ src: 'videos/desarrollos/deloqui-1548/recorrido-dron.mp4', poster: 'imagenes/desarrollos/deloqui-1548/deloqui-1548-dron-poster.jpg', label: 'Recorrido con dron · Deloqui 1548 y entorno' }],
     source: 'https://www.instagram.com/p/DRh-vkoDxsS/', verification: null
   },
   {
