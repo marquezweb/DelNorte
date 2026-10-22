@@ -199,7 +199,7 @@
       ${facts ? `<div class="detail-facts">${facts}</div>` : ''}
       <p class="detail-summary">${escapeHTML(property.summary)}</p>${features}
       ${cadastralDetails}
-      ${rentalTerms || tenancyTerms || saleTerms || (property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
+      ${rentalTerms || tenancyTerms}${saleTerms || (!rentalTerms && !tenancyTerms && property.conditions ? `<p class="detail-conditions">${escapeHTML(property.conditions)}</p>` : '')}
       <a class="detail-contact" href="https://wa.me/${property.whatsapp}?text=${encodeURIComponent(inquiry)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ${icon('arrow_forward')}</a>`;
     document.querySelector('#gallery-thumbnails').innerHTML = galleryMedia.map((entry, index) => `<button type="button" data-photo="${index}" aria-label="${escapeHTML(entry.type === 'video' ? `Ver video: ${entry.label}` : `Ver foto ${index + 1}`)}" aria-current="${index === photoIndex}"><img src="${escapeHTML(entry.type === 'video' ? entry.poster : imageVariant(entry.src, 160))}" alt="" loading="lazy" width="64" height="64">${entry.type === 'video' ? '<span class="property-video-badge" aria-hidden="true">▶</span>' : ''}</button>`).join('');
     updateGallery();

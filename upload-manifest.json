@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T20:37:42.080Z",
-  "totalBytes": 97629154,
+  "generatedAt": "2026-10-22T16:29:37.424Z",
+  "totalBytes": 115335273,
   "files": [
     {
       "path": ".gitignore",
@@ -12,7 +12,7 @@
     },
     {
       "path": "app.js",
-      "bytes": 16581
+      "bytes": 16613
     },
     {
       "path": "assets/logo.jpg",
@@ -472,7 +472,7 @@
     },
     {
       "path": "data/properties.js",
-      "bytes": 25668
+      "bytes": 28124
     },
     {
       "path": "desarrollos.html",
@@ -2033,6 +2033,422 @@
     {
       "path": "assets/properties/quincho-el-murtillar/quincho-el-murtillar-17-1280.webp",
       "bytes": 97188
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-01.jpg",
+      "bytes": 619469
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-01-160.webp",
+      "bytes": 4244
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-01-640.webp",
+      "bytes": 48002
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-01-1280.webp",
+      "bytes": 193968
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-02.jpg",
+      "bytes": 678615
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-02-160.webp",
+      "bytes": 4894
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-02-640.webp",
+      "bytes": 55210
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-02-1280.webp",
+      "bytes": 217664
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-03.jpg",
+      "bytes": 770001
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-03-160.webp",
+      "bytes": 4600
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-03-640.webp",
+      "bytes": 64036
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-03-1280.webp",
+      "bytes": 265982
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-04.jpg",
+      "bytes": 741974
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-04-160.webp",
+      "bytes": 4680
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-04-640.webp",
+      "bytes": 61616
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-04-1280.webp",
+      "bytes": 253244
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-05.jpg",
+      "bytes": 503968
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-05-160.webp",
+      "bytes": 3880
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-05-640.webp",
+      "bytes": 38206
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-05-1280.webp",
+      "bytes": 142132
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-06.jpg",
+      "bytes": 735713
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-06-160.webp",
+      "bytes": 3832
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-06-640.webp",
+      "bytes": 52390
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-06-1280.webp",
+      "bytes": 240062
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-07.jpg",
+      "bytes": 592905
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-07-160.webp",
+      "bytes": 4918
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-07-640.webp",
+      "bytes": 50474
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-07-1280.webp",
+      "bytes": 172378
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-08.jpg",
+      "bytes": 522595
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-08-160.webp",
+      "bytes": 6684
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-08-640.webp",
+      "bytes": 75646
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-08-1280.webp",
+      "bytes": 258114
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-09.jpg",
+      "bytes": 468491
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-09-160.webp",
+      "bytes": 5096
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-09-640.webp",
+      "bytes": 50846
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-09-1280.webp",
+      "bytes": 199846
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-10.jpg",
+      "bytes": 452825
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-10-160.webp",
+      "bytes": 6686
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-10-640.webp",
+      "bytes": 57292
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-10-1280.webp",
+      "bytes": 190376
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-11.jpg",
+      "bytes": 445409
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-11-160.webp",
+      "bytes": 4460
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-11-640.webp",
+      "bytes": 44254
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-11-1280.webp",
+      "bytes": 180230
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-12.jpg",
+      "bytes": 291542
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-12-160.webp",
+      "bytes": 3390
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-12-640.webp",
+      "bytes": 28442
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-12-1280.webp",
+      "bytes": 81568
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-13.jpg",
+      "bytes": 397463
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-13-160.webp",
+      "bytes": 4438
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-13-640.webp",
+      "bytes": 47214
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-13-1280.webp",
+      "bytes": 162172
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-14.jpg",
+      "bytes": 272407
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-14-160.webp",
+      "bytes": 2704
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-14-640.webp",
+      "bytes": 22108
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-14-1280.webp",
+      "bytes": 70806
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-15.jpg",
+      "bytes": 508668
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-15-160.webp",
+      "bytes": 7422
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-15-640.webp",
+      "bytes": 72470
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-15-1280.webp",
+      "bytes": 240968
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-16.jpg",
+      "bytes": 458764
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-16-160.webp",
+      "bytes": 5450
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-16-640.webp",
+      "bytes": 55640
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-16-1280.webp",
+      "bytes": 186136
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-17.jpg",
+      "bytes": 399358
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-17-160.webp",
+      "bytes": 3030
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-17-640.webp",
+      "bytes": 27312
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-17-1280.webp",
+      "bytes": 95568
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-18.jpg",
+      "bytes": 245565
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-18-160.webp",
+      "bytes": 1902
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-18-640.webp",
+      "bytes": 14194
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-18-1280.webp",
+      "bytes": 43686
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-19.jpg",
+      "bytes": 327021
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-19-160.webp",
+      "bytes": 3642
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-19-640.webp",
+      "bytes": 31888
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-19-1280.webp",
+      "bytes": 113070
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-20.jpg",
+      "bytes": 459366
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-20-160.webp",
+      "bytes": 7094
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-20-640.webp",
+      "bytes": 65662
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-20-1280.webp",
+      "bytes": 199756
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-21.jpg",
+      "bytes": 439745
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-21-160.webp",
+      "bytes": 6216
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-21-640.webp",
+      "bytes": 61088
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-21-1280.webp",
+      "bytes": 177100
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-22.jpg",
+      "bytes": 500043
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-22-160.webp",
+      "bytes": 6954
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-22-640.webp",
+      "bytes": 73428
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-22-1280.webp",
+      "bytes": 220158
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-23.jpg",
+      "bytes": 373343
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-23-160.webp",
+      "bytes": 4644
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-23-640.webp",
+      "bytes": 38360
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-23-1280.webp",
+      "bytes": 121948
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-24.jpg",
+      "bytes": 229650
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-24-160.webp",
+      "bytes": 3032
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-24-640.webp",
+      "bytes": 16144
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-24-1280.webp",
+      "bytes": 43422
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-25.jpg",
+      "bytes": 352673
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-25-160.webp",
+      "bytes": 4290
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-25-640.webp",
+      "bytes": 34124
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-25-1280.webp",
+      "bytes": 105622
+    },
+    {
+      "path": "imagenes/propiedades/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-26.jpg",
+      "bytes": 311364
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-26-160.webp",
+      "bytes": 3972
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-26-640.webp",
+      "bytes": 30318
+    },
+    {
+      "path": "assets/properties/casa-departamento-vidal-herrera-agp/casa-departamento-vidal-herrera-agp-26-1280.webp",
+      "bytes": 90200
     }
   ]
 }

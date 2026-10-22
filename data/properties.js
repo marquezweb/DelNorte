@@ -97,6 +97,34 @@
 
   const properties = [
     {
+      id: 'vidal-herrera-agp', publishedAt: '2026-10-22', title: 'Casa a remodelar + departamento',
+      operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'Barrio AGP',
+      address: 'Vidal N° 710-756, esquina Herrera', bedrooms: 5, bathrooms: 2, toilets: 1,
+      area: 169, areaLabel: '169 m² construidos en total', lotArea: 260, price: 90000, currency: 'USD',
+      availabilityStatus: 'confirmed', publicListing: true,
+      occupancy: 'Casa desocupada · Departamento alquilado hasta el 31/12/2027.', showOccupancyOnCard: true,
+      summary: 'Casa a remodelar más departamento en esquina, en Barrio AGP, Río Grande. La casa presenta filtraciones y requiere inversión en refacciones. El conjunto suma 169 m² construidos sobre un terreno de 260 m².',
+      features: ['Casa: cuatro dormitorios', 'Casa: baño completo y toilette', 'Casa: cocina-comedor amplio y living', 'Casa: quincho/garage con parrilla y lavadero', 'Casa: patio con reja', 'Departamento: un dormitorio y baño', 'Departamento: cocina-living-comedor', '169 m² construidos en total', 'Terreno de 260 m²'],
+      tenancyDetails: ['Departamento alquilado hasta el 31/12/2027.', 'Alquiler informado en la ficha: $412.600 mensuales.', 'Casa desocupada.'],
+      saleConditions: ['La casa presenta filtraciones y requiere remodelación.', 'Precio más gastos de comisión inmobiliaria y escritura.'],
+      conditions: '', source: 'Ficha proporcionada por Del Norte Propiedades.',
+      whatsapp: '5492964610103', cardPhotoIndex: 0, heroPhotoIndex: 0,
+      cardPhotoAlt: 'Casa y departamento en esquina sobre Vidal y Herrera, Barrio AGP',
+      photos: propertyPhotos('casa-departamento-vidal-herrera-agp', 26),
+      galleryGroups: [
+        { label: 'Frente de la casa y el departamento', indexes: [0, 1, 2, 3] },
+        { label: 'Casa · Quincho/garage y parrilla', indexes: [4, 5, 6] },
+        { label: 'Casa · Lavadero', indexes: [7] },
+        { label: 'Casa · Dormitorios', indexes: [8, 10, 11, 12] },
+        { label: 'Casa · Baño', indexes: [9] },
+        { label: 'Casa · Cocina y living-comedor', indexes: [13, 14, 15, 16, 17, 18] },
+        { label: 'Departamento · Cocina-living-comedor', indexes: [19, 20, 21] },
+        { label: 'Departamento · Dormitorio y placard', indexes: [22, 23] },
+        { label: 'Departamento · Circulación', indexes: [24] },
+        { label: 'Departamento · Baño', indexes: [25] }
+      ]
+    },
+    {
       id: 'quincho-el-murtillar', publishedAt: '2026-10-21', title: 'Quincho amoblado en El Murtillar',
       operation: 'venta', type: 'casas', city: 'rio-grande', neighborhood: 'El Murtillar',
       address: 'Barrio El Murtillar', bedrooms: null, bathrooms: 1,
